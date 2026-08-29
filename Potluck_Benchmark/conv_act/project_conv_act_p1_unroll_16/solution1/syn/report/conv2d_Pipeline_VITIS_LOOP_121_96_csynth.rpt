@@ -1,0 +1,361 @@
+
+
+================================================================
+== Vitis HLS Report for 'conv2d_Pipeline_VITIS_LOOP_121_96'
+================================================================
+* Date:           Fri Aug 28 19:09:19 2026
+
+* Version:        2024.1.2 (Build 5096458 on Sep  5 2024)
+* Project:        project_conv_act_p1_unroll_16
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.993 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+-----------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |                    Pipeline                   |
+    |   min   |   max   |    min    |    max    | min | max |                      Type                     |
+    +---------+---------+-----------+-----------+-----+-----+-----------------------------------------------+
+    |        6|        6|  60.000 ns|  60.000 ns|    5|    5|  loop auto-rewind stp(delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+-----+-----+-----------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_121_9  |        4|        4|         2|          1|          1|     4|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|    1100|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|    64|       0|     320|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       0|      36|    -|
+|Register         |        -|     -|     176|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|    64|     176|    1456|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |     1824|  2520|  548160|  274080|    0|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     2|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+--------------------+---------+----+---+----+-----+
+    |         Instance        |       Module       | BRAM_18K| DSP| FF| LUT| URAM|
+    +-------------------------+--------------------+---------+----+---+----+-----+
+    |mul_32s_32s_54_1_1_U946  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U947  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U948  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U949  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U950  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U951  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U952  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U953  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U954  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U955  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U956  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U957  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U958  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U959  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U960  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    |mul_32s_32s_54_1_1_U961  |mul_32s_32s_54_1_1  |        0|   4|  0|  20|    0|
+    +-------------------------+--------------------+---------+----+---+----+-----+
+    |Total                    |                    |        0|  64|  0| 320|    0|
+    +-------------------------+--------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |add_ln121_fu_906_p2      |         +|   0|  0|  14|           7|           5|
+    |add_ln123_48_fu_930_p2   |         +|   0|  0|  61|          54|          54|
+    |add_ln123_55_fu_960_p2   |         +|   0|  0|  61|          54|          54|
+    |add_ln123_61_fu_796_p2   |         +|   0|  0|  16|           7|           7|
+    |add_ln123_62_fu_990_p2   |         +|   0|  0|  61|          54|          54|
+    |add_ln123_63_fu_802_p2   |         +|   0|  0|  16|           7|           7|
+    |add_ln123_64_fu_856_p2   |         +|   0|  0|  13|           6|           6|
+    |add_ln123_65_fu_880_p2   |         +|   0|  0|  19|           8|           8|
+    |add_ln123_66_fu_1020_p2  |         +|   0|  0|  61|          54|          54|
+    |add_ln123_67_fu_1050_p2  |         +|   0|  0|  61|          54|          54|
+    |add_ln123_68_fu_1080_p2  |         +|   0|  0|  61|          54|          54|
+    |add_ln123_69_fu_1110_p2  |         +|   0|  0|  61|          54|          54|
+    |add_ln123_70_fu_1140_p2  |         +|   0|  0|  61|          54|          54|
+    |add_ln123_71_fu_1170_p2  |         +|   0|  0|  61|          54|          54|
+    |add_ln123_72_fu_1200_p2  |         +|   0|  0|  61|          54|          54|
+    |add_ln123_73_fu_1230_p2  |         +|   0|  0|  61|          54|          54|
+    |add_ln123_74_fu_1260_p2  |         +|   0|  0|  61|          54|          54|
+    |add_ln123_75_fu_1290_p2  |         +|   0|  0|  61|          54|          54|
+    |add_ln123_76_fu_1320_p2  |         +|   0|  0|  61|          54|          54|
+    |add_ln123_77_fu_1350_p2  |         +|   0|  0|  61|          54|          54|
+    |add_ln123_78_fu_1380_p2  |         +|   0|  0|  61|          54|          54|
+    |add_ln123_fu_778_p2      |         +|   0|  0|  12|           5|           5|
+    |sub_ln123_4_fu_874_p2    |         -|   0|  0|  19|           8|           8|
+    |sub_ln123_fu_850_p2      |         -|   0|  0|  13|           6|           6|
+    |ap_enable_pp0            |       xor|   0|  0|   2|           1|           2|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |Total                    |          |   0|  0|1100|         919|         918|
+    +-------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_co_4    |   9|          2|    7|         14|
+    |co_fu_136                |   9|          2|    7|         14|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   16|         32|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------+----+----+-----+-----------+
+    |              Name              | FF | LUT| Bits| Const Bits|
+    +--------------------------------+----+----+-----+-----------+
+    |BRAM_buffer_1_0_addr_reg_1427   |   7|   0|    7|          0|
+    |BRAM_buffer_1_10_addr_reg_1439  |   7|   0|    7|          0|
+    |BRAM_buffer_1_11_addr_reg_1445  |   7|   0|    7|          0|
+    |BRAM_buffer_1_12_addr_reg_1451  |   7|   0|    7|          0|
+    |BRAM_buffer_1_13_addr_reg_1457  |   7|   0|    7|          0|
+    |BRAM_buffer_1_14_addr_reg_1463  |   7|   0|    7|          0|
+    |BRAM_buffer_1_15_addr_reg_1469  |   7|   0|    7|          0|
+    |BRAM_buffer_1_1_addr_reg_1433   |   7|   0|    7|          0|
+    |BRAM_buffer_1_2_addr_reg_1475   |   7|   0|    7|          0|
+    |BRAM_buffer_1_3_addr_reg_1481   |   7|   0|    7|          0|
+    |BRAM_buffer_1_4_addr_reg_1487   |   7|   0|    7|          0|
+    |BRAM_buffer_1_5_addr_reg_1493   |   7|   0|    7|          0|
+    |BRAM_buffer_1_6_addr_reg_1499   |   7|   0|    7|          0|
+    |BRAM_buffer_1_7_addr_reg_1505   |   7|   0|    7|          0|
+    |BRAM_buffer_1_8_addr_reg_1511   |   7|   0|    7|          0|
+    |BRAM_buffer_1_9_addr_reg_1517   |   7|   0|    7|          0|
+    |ap_CS_fsm                       |   1|   0|    1|          0|
+    |ap_done_reg                     |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1         |   1|   0|    1|          0|
+    |co_fu_136                       |   7|   0|    7|          0|
+    |sext_ln121_6_cast_reg_1404      |  54|   0|   54|          0|
+    +--------------------------------+----+----+-----+-----------+
+    |Total                           | 176|   0|  176|          0|
+    +--------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+-----------------------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |           Source Object           |    C Type    |
++--------------------------------+-----+-----+------------+-----------------------------------+--------------+
+|ap_clk                          |   in|    1|  ap_ctrl_hs|  conv2d_Pipeline_VITIS_LOOP_121_96|  return value|
+|ap_rst                          |   in|    1|  ap_ctrl_hs|  conv2d_Pipeline_VITIS_LOOP_121_96|  return value|
+|ap_start                        |   in|    1|  ap_ctrl_hs|  conv2d_Pipeline_VITIS_LOOP_121_96|  return value|
+|ap_done                         |  out|    1|  ap_ctrl_hs|  conv2d_Pipeline_VITIS_LOOP_121_96|  return value|
+|ap_idle                         |  out|    1|  ap_ctrl_hs|  conv2d_Pipeline_VITIS_LOOP_121_96|  return value|
+|ap_ready                        |  out|    1|  ap_ctrl_hs|  conv2d_Pipeline_VITIS_LOOP_121_96|  return value|
+|zext_ln112                      |   in|    3|     ap_none|                         zext_ln112|        scalar|
+|zext_ln113                      |   in|    3|     ap_none|                         zext_ln113|        scalar|
+|lshr_ln1                        |   in|    2|     ap_none|                           lshr_ln1|        scalar|
+|zext_ln114                      |   in|    2|     ap_none|                         zext_ln114|        scalar|
+|zext_ln115                      |   in|    2|     ap_none|                         zext_ln115|        scalar|
+|sext_ln121_6                    |   in|   32|     ap_none|                       sext_ln121_6|        scalar|
+|BRAM_conv_weight_0_6_address0   |  out|    8|   ap_memory|               BRAM_conv_weight_0_6|         array|
+|BRAM_conv_weight_0_6_ce0        |  out|    1|   ap_memory|               BRAM_conv_weight_0_6|         array|
+|BRAM_conv_weight_0_6_q0         |   in|   32|   ap_memory|               BRAM_conv_weight_0_6|         array|
+|BRAM_buffer_1_0_address0        |  out|    7|   ap_memory|                    BRAM_buffer_1_0|         array|
+|BRAM_buffer_1_0_ce0             |  out|    1|   ap_memory|                    BRAM_buffer_1_0|         array|
+|BRAM_buffer_1_0_we0             |  out|    1|   ap_memory|                    BRAM_buffer_1_0|         array|
+|BRAM_buffer_1_0_d0              |  out|   32|   ap_memory|                    BRAM_buffer_1_0|         array|
+|BRAM_buffer_1_0_address1        |  out|    7|   ap_memory|                    BRAM_buffer_1_0|         array|
+|BRAM_buffer_1_0_ce1             |  out|    1|   ap_memory|                    BRAM_buffer_1_0|         array|
+|BRAM_buffer_1_0_q1              |   in|   32|   ap_memory|                    BRAM_buffer_1_0|         array|
+|BRAM_conv_weight_1_6_address0   |  out|    8|   ap_memory|               BRAM_conv_weight_1_6|         array|
+|BRAM_conv_weight_1_6_ce0        |  out|    1|   ap_memory|               BRAM_conv_weight_1_6|         array|
+|BRAM_conv_weight_1_6_q0         |   in|   32|   ap_memory|               BRAM_conv_weight_1_6|         array|
+|BRAM_buffer_1_1_address0        |  out|    7|   ap_memory|                    BRAM_buffer_1_1|         array|
+|BRAM_buffer_1_1_ce0             |  out|    1|   ap_memory|                    BRAM_buffer_1_1|         array|
+|BRAM_buffer_1_1_we0             |  out|    1|   ap_memory|                    BRAM_buffer_1_1|         array|
+|BRAM_buffer_1_1_d0              |  out|   32|   ap_memory|                    BRAM_buffer_1_1|         array|
+|BRAM_buffer_1_1_address1        |  out|    7|   ap_memory|                    BRAM_buffer_1_1|         array|
+|BRAM_buffer_1_1_ce1             |  out|    1|   ap_memory|                    BRAM_buffer_1_1|         array|
+|BRAM_buffer_1_1_q1              |   in|   32|   ap_memory|                    BRAM_buffer_1_1|         array|
+|BRAM_conv_weight_2_6_address0   |  out|    8|   ap_memory|               BRAM_conv_weight_2_6|         array|
+|BRAM_conv_weight_2_6_ce0        |  out|    1|   ap_memory|               BRAM_conv_weight_2_6|         array|
+|BRAM_conv_weight_2_6_q0         |   in|   32|   ap_memory|               BRAM_conv_weight_2_6|         array|
+|BRAM_buffer_1_2_address0        |  out|    7|   ap_memory|                    BRAM_buffer_1_2|         array|
+|BRAM_buffer_1_2_ce0             |  out|    1|   ap_memory|                    BRAM_buffer_1_2|         array|
+|BRAM_buffer_1_2_we0             |  out|    1|   ap_memory|                    BRAM_buffer_1_2|         array|
+|BRAM_buffer_1_2_d0              |  out|   32|   ap_memory|                    BRAM_buffer_1_2|         array|
+|BRAM_buffer_1_2_address1        |  out|    7|   ap_memory|                    BRAM_buffer_1_2|         array|
+|BRAM_buffer_1_2_ce1             |  out|    1|   ap_memory|                    BRAM_buffer_1_2|         array|
+|BRAM_buffer_1_2_q1              |   in|   32|   ap_memory|                    BRAM_buffer_1_2|         array|
+|BRAM_conv_weight_3_6_address0   |  out|    8|   ap_memory|               BRAM_conv_weight_3_6|         array|
+|BRAM_conv_weight_3_6_ce0        |  out|    1|   ap_memory|               BRAM_conv_weight_3_6|         array|
+|BRAM_conv_weight_3_6_q0         |   in|   32|   ap_memory|               BRAM_conv_weight_3_6|         array|
+|BRAM_buffer_1_3_address0        |  out|    7|   ap_memory|                    BRAM_buffer_1_3|         array|
+|BRAM_buffer_1_3_ce0             |  out|    1|   ap_memory|                    BRAM_buffer_1_3|         array|
+|BRAM_buffer_1_3_we0             |  out|    1|   ap_memory|                    BRAM_buffer_1_3|         array|
+|BRAM_buffer_1_3_d0              |  out|   32|   ap_memory|                    BRAM_buffer_1_3|         array|
+|BRAM_buffer_1_3_address1        |  out|    7|   ap_memory|                    BRAM_buffer_1_3|         array|
+|BRAM_buffer_1_3_ce1             |  out|    1|   ap_memory|                    BRAM_buffer_1_3|         array|
+|BRAM_buffer_1_3_q1              |   in|   32|   ap_memory|                    BRAM_buffer_1_3|         array|
+|BRAM_conv_weight_4_6_address0   |  out|    8|   ap_memory|               BRAM_conv_weight_4_6|         array|
+|BRAM_conv_weight_4_6_ce0        |  out|    1|   ap_memory|               BRAM_conv_weight_4_6|         array|
+|BRAM_conv_weight_4_6_q0         |   in|   32|   ap_memory|               BRAM_conv_weight_4_6|         array|
+|BRAM_buffer_1_4_address0        |  out|    7|   ap_memory|                    BRAM_buffer_1_4|         array|
+|BRAM_buffer_1_4_ce0             |  out|    1|   ap_memory|                    BRAM_buffer_1_4|         array|
+|BRAM_buffer_1_4_we0             |  out|    1|   ap_memory|                    BRAM_buffer_1_4|         array|
+|BRAM_buffer_1_4_d0              |  out|   32|   ap_memory|                    BRAM_buffer_1_4|         array|
+|BRAM_buffer_1_4_address1        |  out|    7|   ap_memory|                    BRAM_buffer_1_4|         array|
+|BRAM_buffer_1_4_ce1             |  out|    1|   ap_memory|                    BRAM_buffer_1_4|         array|
+|BRAM_buffer_1_4_q1              |   in|   32|   ap_memory|                    BRAM_buffer_1_4|         array|
+|BRAM_conv_weight_5_6_address0   |  out|    8|   ap_memory|               BRAM_conv_weight_5_6|         array|
+|BRAM_conv_weight_5_6_ce0        |  out|    1|   ap_memory|               BRAM_conv_weight_5_6|         array|
+|BRAM_conv_weight_5_6_q0         |   in|   32|   ap_memory|               BRAM_conv_weight_5_6|         array|
+|BRAM_buffer_1_5_address0        |  out|    7|   ap_memory|                    BRAM_buffer_1_5|         array|
+|BRAM_buffer_1_5_ce0             |  out|    1|   ap_memory|                    BRAM_buffer_1_5|         array|
+|BRAM_buffer_1_5_we0             |  out|    1|   ap_memory|                    BRAM_buffer_1_5|         array|
+|BRAM_buffer_1_5_d0              |  out|   32|   ap_memory|                    BRAM_buffer_1_5|         array|
+|BRAM_buffer_1_5_address1        |  out|    7|   ap_memory|                    BRAM_buffer_1_5|         array|
+|BRAM_buffer_1_5_ce1             |  out|    1|   ap_memory|                    BRAM_buffer_1_5|         array|
+|BRAM_buffer_1_5_q1              |   in|   32|   ap_memory|                    BRAM_buffer_1_5|         array|
+|BRAM_conv_weight_6_6_address0   |  out|    8|   ap_memory|               BRAM_conv_weight_6_6|         array|
+|BRAM_conv_weight_6_6_ce0        |  out|    1|   ap_memory|               BRAM_conv_weight_6_6|         array|
+|BRAM_conv_weight_6_6_q0         |   in|   32|   ap_memory|               BRAM_conv_weight_6_6|         array|
+|BRAM_buffer_1_6_address0        |  out|    7|   ap_memory|                    BRAM_buffer_1_6|         array|
+|BRAM_buffer_1_6_ce0             |  out|    1|   ap_memory|                    BRAM_buffer_1_6|         array|
+|BRAM_buffer_1_6_we0             |  out|    1|   ap_memory|                    BRAM_buffer_1_6|         array|
+|BRAM_buffer_1_6_d0              |  out|   32|   ap_memory|                    BRAM_buffer_1_6|         array|
+|BRAM_buffer_1_6_address1        |  out|    7|   ap_memory|                    BRAM_buffer_1_6|         array|
+|BRAM_buffer_1_6_ce1             |  out|    1|   ap_memory|                    BRAM_buffer_1_6|         array|
+|BRAM_buffer_1_6_q1              |   in|   32|   ap_memory|                    BRAM_buffer_1_6|         array|
+|BRAM_conv_weight_7_6_address0   |  out|    8|   ap_memory|               BRAM_conv_weight_7_6|         array|
+|BRAM_conv_weight_7_6_ce0        |  out|    1|   ap_memory|               BRAM_conv_weight_7_6|         array|
+|BRAM_conv_weight_7_6_q0         |   in|   32|   ap_memory|               BRAM_conv_weight_7_6|         array|
+|BRAM_buffer_1_7_address0        |  out|    7|   ap_memory|                    BRAM_buffer_1_7|         array|
+|BRAM_buffer_1_7_ce0             |  out|    1|   ap_memory|                    BRAM_buffer_1_7|         array|
+|BRAM_buffer_1_7_we0             |  out|    1|   ap_memory|                    BRAM_buffer_1_7|         array|
+|BRAM_buffer_1_7_d0              |  out|   32|   ap_memory|                    BRAM_buffer_1_7|         array|
+|BRAM_buffer_1_7_address1        |  out|    7|   ap_memory|                    BRAM_buffer_1_7|         array|
+|BRAM_buffer_1_7_ce1             |  out|    1|   ap_memory|                    BRAM_buffer_1_7|         array|
+|BRAM_buffer_1_7_q1              |   in|   32|   ap_memory|                    BRAM_buffer_1_7|         array|
+|BRAM_conv_weight_8_6_address0   |  out|    8|   ap_memory|               BRAM_conv_weight_8_6|         array|
+|BRAM_conv_weight_8_6_ce0        |  out|    1|   ap_memory|               BRAM_conv_weight_8_6|         array|
+|BRAM_conv_weight_8_6_q0         |   in|   32|   ap_memory|               BRAM_conv_weight_8_6|         array|
+|BRAM_buffer_1_8_address0        |  out|    7|   ap_memory|                    BRAM_buffer_1_8|         array|
+|BRAM_buffer_1_8_ce0             |  out|    1|   ap_memory|                    BRAM_buffer_1_8|         array|
+|BRAM_buffer_1_8_we0             |  out|    1|   ap_memory|                    BRAM_buffer_1_8|         array|
+|BRAM_buffer_1_8_d0              |  out|   32|   ap_memory|                    BRAM_buffer_1_8|         array|
+|BRAM_buffer_1_8_address1        |  out|    7|   ap_memory|                    BRAM_buffer_1_8|         array|
+|BRAM_buffer_1_8_ce1             |  out|    1|   ap_memory|                    BRAM_buffer_1_8|         array|
+|BRAM_buffer_1_8_q1              |   in|   32|   ap_memory|                    BRAM_buffer_1_8|         array|
+|BRAM_conv_weight_9_6_address0   |  out|    8|   ap_memory|               BRAM_conv_weight_9_6|         array|
+|BRAM_conv_weight_9_6_ce0        |  out|    1|   ap_memory|               BRAM_conv_weight_9_6|         array|
+|BRAM_conv_weight_9_6_q0         |   in|   32|   ap_memory|               BRAM_conv_weight_9_6|         array|
+|BRAM_buffer_1_9_address0        |  out|    7|   ap_memory|                    BRAM_buffer_1_9|         array|
+|BRAM_buffer_1_9_ce0             |  out|    1|   ap_memory|                    BRAM_buffer_1_9|         array|
+|BRAM_buffer_1_9_we0             |  out|    1|   ap_memory|                    BRAM_buffer_1_9|         array|
+|BRAM_buffer_1_9_d0              |  out|   32|   ap_memory|                    BRAM_buffer_1_9|         array|
+|BRAM_buffer_1_9_address1        |  out|    7|   ap_memory|                    BRAM_buffer_1_9|         array|
+|BRAM_buffer_1_9_ce1             |  out|    1|   ap_memory|                    BRAM_buffer_1_9|         array|
+|BRAM_buffer_1_9_q1              |   in|   32|   ap_memory|                    BRAM_buffer_1_9|         array|
+|BRAM_conv_weight_10_6_address0  |  out|    8|   ap_memory|              BRAM_conv_weight_10_6|         array|
+|BRAM_conv_weight_10_6_ce0       |  out|    1|   ap_memory|              BRAM_conv_weight_10_6|         array|
+|BRAM_conv_weight_10_6_q0        |   in|   32|   ap_memory|              BRAM_conv_weight_10_6|         array|
+|BRAM_buffer_1_10_address0       |  out|    7|   ap_memory|                   BRAM_buffer_1_10|         array|
+|BRAM_buffer_1_10_ce0            |  out|    1|   ap_memory|                   BRAM_buffer_1_10|         array|
+|BRAM_buffer_1_10_we0            |  out|    1|   ap_memory|                   BRAM_buffer_1_10|         array|
+|BRAM_buffer_1_10_d0             |  out|   32|   ap_memory|                   BRAM_buffer_1_10|         array|
+|BRAM_buffer_1_10_address1       |  out|    7|   ap_memory|                   BRAM_buffer_1_10|         array|
+|BRAM_buffer_1_10_ce1            |  out|    1|   ap_memory|                   BRAM_buffer_1_10|         array|
+|BRAM_buffer_1_10_q1             |   in|   32|   ap_memory|                   BRAM_buffer_1_10|         array|
+|BRAM_conv_weight_11_6_address0  |  out|    8|   ap_memory|              BRAM_conv_weight_11_6|         array|
+|BRAM_conv_weight_11_6_ce0       |  out|    1|   ap_memory|              BRAM_conv_weight_11_6|         array|
+|BRAM_conv_weight_11_6_q0        |   in|   32|   ap_memory|              BRAM_conv_weight_11_6|         array|
+|BRAM_buffer_1_11_address0       |  out|    7|   ap_memory|                   BRAM_buffer_1_11|         array|
+|BRAM_buffer_1_11_ce0            |  out|    1|   ap_memory|                   BRAM_buffer_1_11|         array|
+|BRAM_buffer_1_11_we0            |  out|    1|   ap_memory|                   BRAM_buffer_1_11|         array|
+|BRAM_buffer_1_11_d0             |  out|   32|   ap_memory|                   BRAM_buffer_1_11|         array|
+|BRAM_buffer_1_11_address1       |  out|    7|   ap_memory|                   BRAM_buffer_1_11|         array|
+|BRAM_buffer_1_11_ce1            |  out|    1|   ap_memory|                   BRAM_buffer_1_11|         array|
+|BRAM_buffer_1_11_q1             |   in|   32|   ap_memory|                   BRAM_buffer_1_11|         array|
+|BRAM_conv_weight_12_6_address0  |  out|    8|   ap_memory|              BRAM_conv_weight_12_6|         array|
+|BRAM_conv_weight_12_6_ce0       |  out|    1|   ap_memory|              BRAM_conv_weight_12_6|         array|
+|BRAM_conv_weight_12_6_q0        |   in|   32|   ap_memory|              BRAM_conv_weight_12_6|         array|
+|BRAM_buffer_1_12_address0       |  out|    7|   ap_memory|                   BRAM_buffer_1_12|         array|
+|BRAM_buffer_1_12_ce0            |  out|    1|   ap_memory|                   BRAM_buffer_1_12|         array|
+|BRAM_buffer_1_12_we0            |  out|    1|   ap_memory|                   BRAM_buffer_1_12|         array|
+|BRAM_buffer_1_12_d0             |  out|   32|   ap_memory|                   BRAM_buffer_1_12|         array|
+|BRAM_buffer_1_12_address1       |  out|    7|   ap_memory|                   BRAM_buffer_1_12|         array|
+|BRAM_buffer_1_12_ce1            |  out|    1|   ap_memory|                   BRAM_buffer_1_12|         array|
+|BRAM_buffer_1_12_q1             |   in|   32|   ap_memory|                   BRAM_buffer_1_12|         array|
+|BRAM_conv_weight_13_6_address0  |  out|    8|   ap_memory|              BRAM_conv_weight_13_6|         array|
+|BRAM_conv_weight_13_6_ce0       |  out|    1|   ap_memory|              BRAM_conv_weight_13_6|         array|
+|BRAM_conv_weight_13_6_q0        |   in|   32|   ap_memory|              BRAM_conv_weight_13_6|         array|
+|BRAM_buffer_1_13_address0       |  out|    7|   ap_memory|                   BRAM_buffer_1_13|         array|
+|BRAM_buffer_1_13_ce0            |  out|    1|   ap_memory|                   BRAM_buffer_1_13|         array|
+|BRAM_buffer_1_13_we0            |  out|    1|   ap_memory|                   BRAM_buffer_1_13|         array|
+|BRAM_buffer_1_13_d0             |  out|   32|   ap_memory|                   BRAM_buffer_1_13|         array|
+|BRAM_buffer_1_13_address1       |  out|    7|   ap_memory|                   BRAM_buffer_1_13|         array|
+|BRAM_buffer_1_13_ce1            |  out|    1|   ap_memory|                   BRAM_buffer_1_13|         array|
+|BRAM_buffer_1_13_q1             |   in|   32|   ap_memory|                   BRAM_buffer_1_13|         array|
+|BRAM_conv_weight_14_6_address0  |  out|    8|   ap_memory|              BRAM_conv_weight_14_6|         array|
+|BRAM_conv_weight_14_6_ce0       |  out|    1|   ap_memory|              BRAM_conv_weight_14_6|         array|
+|BRAM_conv_weight_14_6_q0        |   in|   32|   ap_memory|              BRAM_conv_weight_14_6|         array|
+|BRAM_buffer_1_14_address0       |  out|    7|   ap_memory|                   BRAM_buffer_1_14|         array|
+|BRAM_buffer_1_14_ce0            |  out|    1|   ap_memory|                   BRAM_buffer_1_14|         array|
+|BRAM_buffer_1_14_we0            |  out|    1|   ap_memory|                   BRAM_buffer_1_14|         array|
+|BRAM_buffer_1_14_d0             |  out|   32|   ap_memory|                   BRAM_buffer_1_14|         array|
+|BRAM_buffer_1_14_address1       |  out|    7|   ap_memory|                   BRAM_buffer_1_14|         array|
+|BRAM_buffer_1_14_ce1            |  out|    1|   ap_memory|                   BRAM_buffer_1_14|         array|
+|BRAM_buffer_1_14_q1             |   in|   32|   ap_memory|                   BRAM_buffer_1_14|         array|
+|BRAM_conv_weight_15_6_address0  |  out|    8|   ap_memory|              BRAM_conv_weight_15_6|         array|
+|BRAM_conv_weight_15_6_ce0       |  out|    1|   ap_memory|              BRAM_conv_weight_15_6|         array|
+|BRAM_conv_weight_15_6_q0        |   in|   32|   ap_memory|              BRAM_conv_weight_15_6|         array|
+|BRAM_buffer_1_15_address0       |  out|    7|   ap_memory|                   BRAM_buffer_1_15|         array|
+|BRAM_buffer_1_15_ce0            |  out|    1|   ap_memory|                   BRAM_buffer_1_15|         array|
+|BRAM_buffer_1_15_we0            |  out|    1|   ap_memory|                   BRAM_buffer_1_15|         array|
+|BRAM_buffer_1_15_d0             |  out|   32|   ap_memory|                   BRAM_buffer_1_15|         array|
+|BRAM_buffer_1_15_address1       |  out|    7|   ap_memory|                   BRAM_buffer_1_15|         array|
+|BRAM_buffer_1_15_ce1            |  out|    1|   ap_memory|                   BRAM_buffer_1_15|         array|
+|BRAM_buffer_1_15_q1             |   in|   32|   ap_memory|                   BRAM_buffer_1_15|         array|
++--------------------------------+-----+-----+------------+-----------------------------------+--------------+
+

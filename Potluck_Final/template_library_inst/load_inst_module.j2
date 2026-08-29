@@ -1,0 +1,209 @@
+wire    {{load_inst_instance_name}}_ap_start;
+wire    {{load_inst_instance_name}}_ap_done;
+wire    {{load_inst_instance_name}}_ap_idle;
+wire    {{load_inst_instance_name}}_ap_ready;
+wire   [{{inst_length - 1}}:0] {{load_inst_instance_name}}_fifo_1_din;
+wire    {{load_inst_instance_name}}_fifo_1_write;
+wire    {{load_inst_instance_name}}_inst_TREADY;
+
+wire  [{{fifo_depth_binary - 1}}:0] if_num_data_valid_inst_fifo;
+wire  [{{fifo_depth_binary - 1}}:0] if_fifo_cap_inst_fifo;
+wire  if_empty_n_inst_fifo;
+reg   if_read_inst_fifo;
+wire  [{{inst_length - 1}}:0] if_dout_inst_fifo;
+wire  if_full_n_inst_fifo;
+wire  if_write_inst_fifo;  
+wire  [{{inst_length - 1}}:0] if_din_inst_fifo;
+
+wire    regslice_both_inst_V_data_V_U_apdone_blk;
+wire   [{{inst_length - 1}}:0] inst_TDATA_int_regslice;
+wire    inst_TVALID_int_regslice;
+reg    inst_TREADY_int_regslice;
+wire    regslice_both_inst_V_data_V_U_ack_in;
+
+wire    regslice_both_inst_V_keep_V_U_apdone_blk;
+wire   [{{ ((inst_length / 8) | int) - 1 }}:0] inst_TKEEP_int_regslice;
+wire    regslice_both_inst_V_keep_V_U_vld_out;
+wire    regslice_both_inst_V_keep_V_U_ack_in;
+
+wire    regslice_both_inst_V_strb_V_U_apdone_blk;
+wire   [{{ ((inst_length / 8) | int) - 1 }}:0] inst_TSTRB_int_regslice;
+wire    regslice_both_inst_V_strb_V_U_vld_out;
+wire    regslice_both_inst_V_strb_V_U_ack_in;
+
+wire    regslice_both_inst_V_user_V_U_apdone_blk;
+wire   [0:0] inst_TUSER_int_regslice;
+wire    regslice_both_inst_V_user_V_U_vld_out;
+wire    regslice_both_inst_V_user_V_U_ack_in;
+
+wire    regslice_both_inst_V_last_V_U_apdone_blk;
+wire   [0:0] inst_TLAST_int_regslice;
+wire    regslice_both_inst_V_last_V_U_vld_out;
+wire    regslice_both_inst_V_last_V_U_ack_in;
+
+wire    regslice_both_inst_V_id_V_U_apdone_blk;
+wire   [0:0] inst_TID_int_regslice;
+wire    regslice_both_inst_V_id_V_U_vld_out;
+wire    regslice_both_inst_V_id_V_U_ack_in;
+
+wire    regslice_both_inst_V_dest_V_U_apdone_blk;
+wire   [0:0] inst_TDEST_int_regslice;
+wire    regslice_both_inst_V_dest_V_U_vld_out;
+wire    regslice_both_inst_V_dest_V_U_ack_in;
+
+
+{{load_inst_module_name}} {{load_inst_instance_name}}(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .ap_start({{load_inst_instance_name}}_ap_start),
+    .ap_done({{load_inst_instance_name}}_ap_done),
+    .ap_idle({{load_inst_instance_name}}_ap_idle),
+    .ap_ready({{load_inst_instance_name}}_ap_ready),
+    .inst_TVALID(inst_TVALID_int_regslice),
+    .fifo_1_din({{load_inst_instance_name}}_fifo_1_din),
+    .fifo_1_full_n(if_full_n_inst_fifo),
+    .fifo_1_write({{load_inst_instance_name}}_fifo_1_write),
+    .inst_TDATA(inst_TDATA_int_regslice),
+    .inst_TREADY({{load_inst_instance_name}}_inst_TREADY),
+    .inst_TKEEP(inst_TKEEP_int_regslice),
+    .inst_TSTRB(inst_TSTRB_int_regslice),
+    .inst_TUSER(inst_TUSER_int_regslice),
+    .inst_TLAST(inst_TLAST_int_regslice),
+    .inst_TID(inst_TID_int_regslice),
+    .inst_TDEST(inst_TDEST_int_regslice)
+);
+
+inst_fifo_w32_d5_S #(
+    .MEM_STYLE("shiftReg"),
+    .DATA_WIDTH({{inst_length}}),
+    .ADDR_WIDTH({{fifo_depth_binary}}),
+    .DEPTH({{fifo_depth}})
+) instruction_fifo_inst (
+    .clk         (ap_clk),
+    .reset       (ap_rst_n_inv),
+    
+    // Write side 
+    .if_full_n   (if_full_n_inst_fifo),
+    .if_write_ce (1'b1),
+    .if_write    (if_write_inst_fifo),
+    .if_din      (if_din_inst_fifo),
+
+    // Read side
+    .if_num_data_valid (if_num_data_valid_inst_fifo),
+    .if_fifo_cap (if_fifo_cap_inst_fifo),
+    .if_empty_n  (if_empty_n_inst_fifo),
+    .if_read_ce  (1'b1),
+    .if_read     (if_read_inst_fifo),
+    .if_dout     (if_dout_inst_fifo)
+);
+
+assign if_din_inst_fifo = {{load_inst_instance_name}}_fifo_1_din;
+assign if_write_inst_fifo = {{load_inst_instance_name}}_fifo_1_write;
+
+always @(*) 
+    begin
+            inst_TREADY_int_regslice = {{load_inst_instance_name}}_inst_TREADY;
+    end
+assign inst_TREADY = regslice_both_inst_V_data_V_U_ack_in;
+
+top_regslice_both #(
+    .DataWidth( {{inst_length}} ))
+regslice_both_inst_V_data_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(inst_TDATA),
+    .vld_in(inst_TVALID),
+    .ack_in(regslice_both_inst_V_data_V_U_ack_in),
+    .data_out(inst_TDATA_int_regslice),
+    .vld_out(inst_TVALID_int_regslice),
+    .ack_out(inst_TREADY_int_regslice),
+    .apdone_blk(regslice_both_inst_V_data_V_U_apdone_blk)
+);
+
+
+top_regslice_both #(
+    .DataWidth( {{ ((inst_length / 8) | int) }} ))
+regslice_both_inst_V_keep_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(inst_TKEEP),
+    .vld_in(inst_TVALID),
+    .ack_in(regslice_both_inst_V_keep_V_U_ack_in),
+    .data_out(inst_TKEEP_int_regslice),
+    .vld_out(regslice_both_inst_V_keep_V_U_vld_out),
+    .ack_out(inst_TREADY_int_regslice),
+    .apdone_blk(regslice_both_inst_V_keep_V_U_apdone_blk)
+);
+
+top_regslice_both #(
+    .DataWidth( {{ ((inst_length / 8) | int) }} ))
+regslice_both_inst_V_strb_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(inst_TSTRB),
+    .vld_in(inst_TVALID),
+    .ack_in(regslice_both_inst_V_strb_V_U_ack_in),
+    .data_out(inst_TSTRB_int_regslice),
+    .vld_out(regslice_both_inst_V_strb_V_U_vld_out),
+    .ack_out(inst_TREADY_int_regslice),
+    .apdone_blk(regslice_both_inst_V_strb_V_U_apdone_blk)
+);
+
+top_regslice_both #(
+    .DataWidth( 1 ))
+regslice_both_inst_V_user_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(inst_TUSER),
+    .vld_in(inst_TVALID),
+    .ack_in(regslice_both_inst_V_user_V_U_ack_in),
+    .data_out(inst_TUSER_int_regslice),
+    .vld_out(regslice_both_inst_V_user_V_U_vld_out),
+    .ack_out(inst_TREADY_int_regslice),
+    .apdone_blk(regslice_both_inst_V_user_V_U_apdone_blk)
+);
+
+
+
+top_regslice_both #(
+    .DataWidth( 1 ))
+regslice_both_inst_V_last_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(inst_TLAST),
+    .vld_in(inst_TVALID),
+    .ack_in(regslice_both_inst_V_last_V_U_ack_in),
+    .data_out(inst_TLAST_int_regslice),
+    .vld_out(regslice_both_inst_V_last_V_U_vld_out),
+    .ack_out(inst_TREADY_int_regslice),
+    .apdone_blk(regslice_both_inst_V_last_V_U_apdone_blk)
+);
+
+top_regslice_both #(
+    .DataWidth( 1 ))
+regslice_both_inst_V_id_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(inst_TID),
+    .vld_in(inst_TVALID),
+    .ack_in(regslice_both_inst_V_id_V_U_ack_in),
+    .data_out(inst_TID_int_regslice),
+    .vld_out(regslice_both_inst_V_id_V_U_vld_out),
+    .ack_out(inst_TREADY_int_regslice),
+    .apdone_blk(regslice_both_inst_V_id_V_U_apdone_blk)
+);
+
+
+top_regslice_both #(
+    .DataWidth( 1 ))
+regslice_both_inst_V_dest_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(inst_TDEST),
+    .vld_in(inst_TVALID),
+    .ack_in(regslice_both_inst_V_dest_V_U_ack_in),
+    .data_out(inst_TDEST_int_regslice),
+    .vld_out(regslice_both_inst_V_dest_V_U_vld_out),
+    .ack_out(inst_TREADY_int_regslice),
+    .apdone_blk(regslice_both_inst_V_dest_V_U_apdone_blk)
+);

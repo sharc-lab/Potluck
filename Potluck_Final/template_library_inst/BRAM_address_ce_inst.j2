@@ -1,0 +1,62 @@
+reg  [{{ bit_width - 1 }}:0]   sel_{{ input_buffer_name }}_address0;
+
+always @ (*) begin
+    case (sel_{{ input_buffer_name }}_address0)
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ input_buffer_name }}_address0 = {{ mapping.func_name }}_address0;
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ input_buffer_name }}_address0 = 'bx;
+        end
+        default: begin
+            {{ input_buffer_name }}_address0 = 'bx;
+        end
+    endcase
+end
+
+always @ (*) begin
+    if (1'b1 == ap_CS_fsm[{{load_inst_state}}]) begin
+        sel_{{ input_buffer_name }}_address0 = 2'd0;
+    end else if (1'b1 == load_inst_fifo_U_ap_start_reg) begin
+        sel_{{ input_buffer_name }}_address0 = 2'd1;
+    end else begin
+        sel_{{ input_buffer_name }}_address0 = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end
+
+
+reg  [{{ bit_width - 1 }}:0]  sel_{{ input_buffer_name }}_ce0;
+
+always @ (*) begin
+    case (sel_{{ input_buffer_name }}_ce0)
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ input_buffer_name }}_ce0 = {{ mapping.func_name }}_ce0;
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ input_buffer_name }}_ce0 = 1'b0;
+        end
+        default: begin
+            {{ input_buffer_name }}_ce0 = 1'b0;
+        end
+    endcase
+end
+
+always @ (*) begin
+    if (1'b1 == ap_CS_fsm[{{load_inst_state}}]) begin
+        sel_{{ input_buffer_name }}_ce0 = 2'd0;
+    end else if (1'b1 == load_inst_fifo_U_ap_start_reg) begin
+        sel_{{ input_buffer_name }}_ce0 = 2'd1;
+    end else begin
+        sel_{{ input_buffer_name }}_ce0 = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end
+
+
+
+

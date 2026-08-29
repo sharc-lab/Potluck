@@ -1,0 +1,7 @@
+{
+  "mappings": {
+    "mem1":  ["load_data"],
+    "mem2": ["store_data"],
+    "INPUT2":   ["load_inst"]
+  }
+}

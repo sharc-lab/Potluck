@@ -1,0 +1,3 @@
+../Potluck_Benchmark/DNN_block/project_DNN_block_p1_unroll_1/solution1/
+../Potluck_Benchmark/DNN_block/project_DNN_block_p2_unroll_1/solution1/
+../Potluck_Benchmark/DNN_block/project_DNN_block_p3_unroll_1/solution1/

@@ -1,0 +1,118 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 5 4 3 6 7",
+    "file": "p1_unroll_16.cpp",
+    "fileloc": 270,
+    "instructions": 12,
+    "name": "top",
+    "total_instructions": 49437
+  },
+  "1": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "p1_unroll_16.cpp",
+    "fileloc": 32,
+    "instructions": 42,
+    "loads": {
+      "L": 1
+    },
+    "name": "load_image",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 42
+  },
+  "2": {
+    "basicblocks": 316,
+    "calls": "",
+    "file": "hls_exp_apfixed.h",
+    "fileloc": 13,
+    "instructions": 4402,
+    "loads": {
+      "G": 32,
+      "L": 16
+    },
+    "name": "exp<32, 10>",
+    "stores": {
+      "G": 16,
+      "L": 27
+    },
+    "total_instructions": 47780
+  },
+  "3": {
+    "basicblocks": 60,
+    "calls": "",
+    "file": "p1_unroll_16.cpp",
+    "fileloc": 88,
+    "instructions": 143,
+    "loads": {
+      "L": 1
+    },
+    "name": "conv2d",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 517
+  },
+  "4": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "p1_unroll_16.cpp",
+    "fileloc": 58,
+    "instructions": 16,
+    "loads": {
+      "L": 1
+    },
+    "name": "load_bias",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 16
+  },
+  "5": {
+    "basicblocks": 25,
+    "calls": "",
+    "file": "p1_unroll_16.cpp",
+    "fileloc": 44,
+    "instructions": 55,
+    "loads": {
+      "L": 1
+    },
+    "name": "load_weight",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 55
+  },
+  "6": {
+    "basicblocks": 22,
+    "calls": "",
+    "file": "p1_unroll_16.cpp",
+    "fileloc": 244,
+    "instructions": 111,
+    "loads": {
+      "L": 4
+    },
+    "name": "elu_activation",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 48753
+  },
+  "7": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "p1_unroll_16.cpp",
+    "fileloc": 133,
+    "instructions": 42,
+    "loads": {
+      "L": 1
+    },
+    "name": "store",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 42
+  }
+}

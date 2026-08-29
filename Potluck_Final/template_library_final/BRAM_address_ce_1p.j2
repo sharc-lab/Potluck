@@ -1,0 +1,56 @@
+reg[{{ bit_width - 1 }}:0] sel_{{ input_buffer_name }}_address0;
+
+always @ (*) begin
+    case (sel_{{ input_buffer_name }}_address0)
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ input_buffer_name }}_address0 = {{ mapping.func_name }}_address0;
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ input_buffer_name }}_address0 = 'bx;
+        end
+        default: begin
+            {{ input_buffer_name }}_address0 = 'bx;
+        end
+    endcase
+end
+
+always @ (*) begin
+    if (ap_CS_fsm[0] != 1'b1) begin
+        sel_{{ input_buffer_name }}_address0 = next_fsm_state_reg[{{ fsm_state_range }}];
+    end else begin
+        sel_{{ input_buffer_name }}_address0 = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end
+
+reg[{{ bit_width - 1 }}:0] sel_{{ input_buffer_name }}_ce0;
+
+always @ (*) begin
+    case (sel_{{ input_buffer_name }}_ce0)
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ input_buffer_name }}_ce0 = {{ mapping.func_name }}_ce0;
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ input_buffer_name }}_ce0 = 1'b0;
+        end
+        default: begin
+            {{ input_buffer_name }}_ce0 = 1'b0;
+        end
+    endcase
+end
+
+always @ (*) begin
+    if (ap_CS_fsm[0] != 1'b1) begin
+        sel_{{ input_buffer_name }}_ce0 = next_fsm_state_reg[{{ fsm_state_range }}];
+    end else begin
+        sel_{{ input_buffer_name }}_ce0 = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end
+
+
+

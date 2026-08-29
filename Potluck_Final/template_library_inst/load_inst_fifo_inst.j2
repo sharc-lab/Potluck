@@ -1,0 +1,196 @@
+module load_inst_fifo (
+        ap_clk,
+        ap_rst,
+        ap_start,
+        ap_done,
+        ap_idle,
+        ap_ready,
+        inst_input_address0,
+        inst_input_ce0,
+        inst_input_q0,
+        input_stream_din,
+        input_stream_full_n,
+        input_stream_write,
+        n
+);
+
+parameter    ap_ST_fsm_state1 = 3'd1;
+parameter    ap_ST_fsm_state2 = 3'd2;
+parameter    ap_ST_fsm_state3 = 3'd4;
+
+input   ap_clk;
+input   ap_rst;
+input   ap_start;
+output   ap_done;
+output   ap_idle;
+output   ap_ready;
+output  [{{inst_num_bit_width - 1}}:0] inst_input_address0;
+output   inst_input_ce0;
+input  [{{inst_length - 1}}:0] inst_input_q0;
+output  [{{inst_length - 1}}:0] input_stream_din;
+input   input_stream_full_n;
+output   input_stream_write;
+input  [31:0] n;
+
+reg ap_done;
+reg ap_idle;
+reg ap_ready;
+
+(* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm;
+wire    ap_CS_fsm_state1;
+reg    input_stream_blk_n;
+wire    ap_CS_fsm_state3;
+wire    ap_CS_fsm_state2;
+wire   [63:0] zext_ln86_fu_98_p1;
+wire   [0:0] icmp_ln86_fu_87_p2;
+reg   [30:0] i_fu_44;
+wire   [30:0] add_ln86_fu_92_p2;
+reg    input_stream_write_local;
+reg    inst_input_ce0_local;
+wire   [31:0] zext_ln86_1_fu_83_p1;
+reg   [2:0] ap_NS_fsm;
+reg    ap_ST_fsm_state1_blk;
+wire    ap_ST_fsm_state2_blk;
+reg    ap_ST_fsm_state3_blk;
+wire    ap_ce_reg;
+
+// power-on initialization
+initial begin
+#0 ap_CS_fsm = 3'd1;
+#0 i_fu_44 = 31'd0;
+end
+
+always @ (posedge ap_clk) begin
+    if (ap_rst == 1'b1) begin
+        ap_CS_fsm <= ap_ST_fsm_state1;
+    end else begin
+        ap_CS_fsm <= ap_NS_fsm;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
+        i_fu_44 <= 31'd0;
+    end else if (((icmp_ln86_fu_87_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+        i_fu_44 <= add_ln86_fu_92_p2;
+    end
+end
+
+always @ (*) begin
+    if ((ap_start == 1'b0)) begin
+        ap_ST_fsm_state1_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state1_blk = 1'b0;
+    end
+end
+
+assign ap_ST_fsm_state2_blk = 1'b0;
+
+always @ (*) begin
+    if ((input_stream_full_n == 1'b0)) begin
+        ap_ST_fsm_state3_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state3_blk = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((icmp_ln86_fu_87_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+        ap_done = 1'b1;
+    end else begin
+        ap_done = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1))) begin
+        ap_idle = 1'b1;
+    end else begin
+        ap_idle = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((icmp_ln86_fu_87_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+        ap_ready = 1'b1;
+    end else begin
+        ap_ready = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state3)) begin
+        input_stream_blk_n = input_stream_full_n;
+    end else begin
+        input_stream_blk_n = 1'b1;
+    end
+end
+
+always @ (*) begin
+    if (((input_stream_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+        input_stream_write_local = 1'b1;
+    end else begin
+        input_stream_write_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state2)) begin
+        inst_input_ce0_local = 1'b1;
+    end else begin
+        inst_input_ce0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    case (ap_CS_fsm)
+        ap_ST_fsm_state1 : begin
+            if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
+                ap_NS_fsm = ap_ST_fsm_state2;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state1;
+            end
+        end
+        ap_ST_fsm_state2 : begin
+            if (((icmp_ln86_fu_87_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+                ap_NS_fsm = ap_ST_fsm_state1;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state3;
+            end
+        end
+        ap_ST_fsm_state3 : begin
+            if (((input_stream_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+                ap_NS_fsm = ap_ST_fsm_state2;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state3;
+            end
+        end
+        default : begin
+            ap_NS_fsm = 'bx;
+        end
+    endcase
+end
+
+assign add_ln86_fu_92_p2 = (i_fu_44 + 31'd1);
+
+assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
+
+assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
+
+assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
+
+assign icmp_ln86_fu_87_p2 = (($signed(zext_ln86_1_fu_83_p1) < $signed(n)) ? 1'b1 : 1'b0);
+
+assign input_stream_din = inst_input_q0;
+
+assign input_stream_write = input_stream_write_local;
+
+assign inst_input_address0 = zext_ln86_fu_98_p1;
+
+assign inst_input_ce0 = inst_input_ce0_local;
+
+assign zext_ln86_1_fu_83_p1 = i_fu_44;
+
+assign zext_ln86_fu_98_p1 = i_fu_44;
+
+endmodule 

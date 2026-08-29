@@ -1,0 +1,8 @@
+
+{
+  "P1":   ["BRAM_input_buffer", "BRAM_weight_one", "BRAM_weight_two", "BRAM_output_buffer_one", "BRAM_output_buffer_two"],
+
+  "P2":   ["BRAM_input_buffer", "BRAM_weight_one", "BRAM_weight_two", "BRAM_output_buffer_one", "BRAM_output_buffer_two"],
+
+  "P3":   ["BRAM_input_buffer", "BRAM_weight_one", "BRAM_weight_two", "BRAM_output_buffer_one", "BRAM_output_buffer_two"]
+}

@@ -1,0 +1,63 @@
+localparam
+    ADDR_AP_CTRL              = {{ C_S_AXI_ADDR_WIDTH }}'h00,
+    ADDR_GIE                  = {{ C_S_AXI_ADDR_WIDTH }}'h04,
+    ADDR_IER                  = {{ C_S_AXI_ADDR_WIDTH }}'h08,
+    ADDR_ISR                  = {{ C_S_AXI_ADDR_WIDTH }}'h0c,
+{% for r in user_defined_ports_output %}
+    ADDR_{{ r.name|upper }}{% if r.type=='array' %}_DATA_0{% else %}_DATA_0{% endif %}    = {{ r.base_literal }},
+    {% if r.type=='array' %}
+    ADDR_{{ r.name|upper }}_DATA_1    = {{ r.data1_literal }},
+    {% endif %}
+    ADDR_{{ r.name|upper }}_CTRL      = {{ r.ctrl_literal }},
+{% endfor %}
+{% for r in user_defined_ports_input %}
+    ADDR_{{ r.name|upper }}{% if r.type=='array' %}_DATA_0{% else %}_DATA_0{% endif %}    = {{ r.base_literal }},
+    {% if r.type=='array' %}
+    ADDR_{{ r.name|upper }}_DATA_1    = {{ r.data1_literal }},
+    {% endif %}
+    ADDR_{{ r.name|upper }}_CTRL      = {{ r.ctrl_literal }},
+{% endfor %}
+
+    WRIDLE                    = 2'd0,
+    WRDATA                    = 2'd1,
+    WRRESP                    = 2'd2,
+    WRRESET                   = 2'd3,
+    RDIDLE                    = 2'd0,
+    RDDATA                    = 2'd1,
+    RDRESET                   = 2'd2,
+    ADDR_BITS                 = {{ ADDR_BITS }};
+
+//------------------------Local signal-------------------
+    reg  [1:0]                    wstate = WRRESET;
+    reg  [1:0]                    wnext;
+    reg  [ADDR_BITS-1:0]          waddr;
+    wire [C_S_AXI_DATA_WIDTH-1:0] wmask;
+    wire                          aw_hs;
+    wire                          w_hs;
+    reg  [1:0]                    rstate = RDRESET;
+    reg  [1:0]                    rnext;
+    reg  [C_S_AXI_DATA_WIDTH-1:0] rdata;
+    wire                          ar_hs;
+    wire [ADDR_BITS-1:0]          raddr;
+    // internal registers
+    reg                           int_ap_idle = 1'b0;
+    reg                           int_ap_ready = 1'b0;
+    wire                          task_ap_ready;
+    reg                           int_ap_done = 1'b0;
+    wire                          task_ap_done;
+    reg                           int_task_ap_done = 1'b0;
+    reg                           int_ap_start = 1'b0;
+    reg                           int_interrupt = 1'b0;
+    reg                           int_auto_restart = 1'b0;
+    reg                           auto_restart_status = 1'b0;
+    wire                          auto_restart_done;
+    reg                           int_gie = 1'b0;
+    reg  [1:0]                    int_ier = 2'b0;
+    reg  [1:0]                    int_isr = 2'b0;
+{% for r in user_defined_ports_output %}
+    reg  [{{ r.width-1 }}:0]                   int_{{ r.name }} = 'b0;
+{% endfor %}
+{% for r in user_defined_ports_input %}
+    reg                           int_{{ r.name }}_ap_vld;
+    reg  [{{ r.width-1 }}:0]                   int_{{ r.name }} = 'b0;
+{% endfor %}

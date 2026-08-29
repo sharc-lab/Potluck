@@ -1,0 +1,80 @@
+{% set axi_fixed_ports = [
+    "AWVALID", "AWREADY", "AWADDR", "WVALID", "WREADY", "WDATA", "WSTRB",
+    "ARVALID", "ARREADY", "ARADDR", "RVALID", "RREADY", "RDATA", "RRESP",
+    "BVALID", "BREADY", "BRESP"
+] %}
+
+{% set ctrl_fixed_ports = [
+    "ap_start", "interrupt", "ap_ready", "ap_done", "ap_idle"
+] %}
+
+{%- for signal_name, signal_width in width_dict_output %}
+wire   [{{signal_width - 1}}:0] {{signal_name}};
+{%- endfor %}
+
+{%- for signal_name, signal_width in width_dict_output %}
+reg   [{{signal_width - 1}}:0] {{signal_name}}_read_reg;
+{%- endfor %}
+
+{%- for signal_name, signal_width in width_dict_input %}
+reg   [{{signal_width - 1}}:0] {{signal_name}};
+reg     {{signal_name}}_ap_vld;
+{%- endfor %}
+
+parameter    C_S_AXI_CONTROL_DATA_WIDTH = {{C_S_AXI_CONTROL_DATA_WIDTH}};
+parameter    C_S_AXI_CONTROL_ADDR_WIDTH = {{C_S_AXI_CONTROL_ADDR_WIDTH}};
+parameter    C_S_AXI_CONTROL_WSTRB_WIDTH = {{C_S_AXI_CONTROL_WSTRB_WIDTH}};
+input   s_axi_control_AWVALID;
+output   s_axi_control_AWREADY;
+input  [C_S_AXI_CONTROL_ADDR_WIDTH - 1:0] s_axi_control_AWADDR;
+input   s_axi_control_WVALID;
+output   s_axi_control_WREADY;
+input  [C_S_AXI_CONTROL_DATA_WIDTH - 1:0] s_axi_control_WDATA;
+input  [C_S_AXI_CONTROL_WSTRB_WIDTH - 1:0] s_axi_control_WSTRB;
+input   s_axi_control_ARVALID;
+output   s_axi_control_ARREADY;
+input  [C_S_AXI_CONTROL_ADDR_WIDTH - 1:0] s_axi_control_ARADDR;
+output   s_axi_control_RVALID;
+input   s_axi_control_RREADY;
+output  [C_S_AXI_CONTROL_DATA_WIDTH - 1:0] s_axi_control_RDATA;
+output  [1:0] s_axi_control_RRESP;
+output   s_axi_control_BVALID;
+input   s_axi_control_BREADY;
+output  [1:0] s_axi_control_BRESP;
+output   interrupt;
+
+input   ap_clk;
+input   ap_rst_n;
+reg    ap_rst_n_inv;
+wire    ap_start;
+reg    ap_done;
+reg    ap_idle;
+reg    ap_ready;
+
+top_control_s_axi #(
+    {%- for param in user_parameters %}
+    .C_S_AXI_{{ param|replace("C_S_AXI_", "") }}( C_S_AXI_CONTROL_{{ param|replace("C_S_AXI_", "") }} )
+    {%- if not loop.last %},{%- endif %}
+    {%- endfor %})
+control_s_axi_U(
+    {%- for port in axi_fixed_ports %}
+    .{{port}}(s_axi_control_{{port}}),
+    {%- endfor %}
+    .ACLK(ap_clk),
+    .ARESET(ap_rst_n_inv),
+    .ACLK_EN(1'b1),
+    {%- if user_defined_ports_output %}
+    {%- for port, original_signal in user_defined_ports_output %}
+    .{{port}}({{original_signal}}),
+    {%- endfor %}
+    {%- endif %}
+    {%- if user_defined_ports_input %}
+    {%- for port, original_signal in user_defined_ports_input %}
+    .{{port}}({{original_signal}}),
+    .{{port}}_ap_vld({{original_signal}}_ap_vld),
+    {%- endfor %}
+    {%- endif %}
+    {%- for port in ctrl_fixed_ports %}
+    .{{port}}({{port}}){% if not loop.last %},{% endif %}
+    {%- endfor %}
+);

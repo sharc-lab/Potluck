@@ -1,0 +1,51 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'top'" level="0">
+<item name = "Date">Fri Aug 28 19:09:16 2026
+</item>
+<item name = "Version">2024.1.2 (Build 5096458 on Sep  5 2024)</item>
+<item name = "Project">project_conv_act_p1_unroll_16</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu9eg-ffvb1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">41059, 157159, 0.411 ms, 1.572 ms, 41060, 157160, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_load_image_fu_742">load_image, 1612, 1612, 16.120 us, 16.120 us, 1612, 1612, no</column>
+<column name="grp_load_weight_fu_781">load_weight, 36876, 36876, 0.369 ms, 0.369 ms, 36876, 36876, no</column>
+<column name="grp_load_bias_fu_1300">load_bias, 76, 76, 0.760 us, 0.760 us, 76, 76, no</column>
+<column name="grp_conv2d_fu_1339">conv2d, 764, 116864, 7.640 us, 1.169 ms, 764, 116864, no</column>
+<column name="grp_elu_activation_fu_1951">elu_activation, 109, 109, 1.090 us, 1.090 us, 101, 101, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_store_fu_2031">store, 1610, 1610, 16.100 us, 16.100 us, 1610, 1610, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

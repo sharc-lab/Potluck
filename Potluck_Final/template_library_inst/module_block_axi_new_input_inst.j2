@@ -1,0 +1,119 @@
+
+{% set fixed_ports_map = {
+    "ap_clk": "ap_clk",
+    "ap_rst": "ap_rst_n_inv"
+} %}
+{% set axi_suffixes = [
+    "AWREADY", "WREADY", "ARREADY",
+    "RVALID", "RDATA", "RLAST", "RID", "RFIFONUM",
+    "RUSER", "RRESP", "BVALID", "BRESP", "BID", "BUSER"
+] %}
+
+wire    {{ instance_name }}_ap_start;
+wire    {{ instance_name }}_ap_done;
+wire    {{ instance_name }}_ap_idle;
+wire    {{ instance_name }}_ap_ready;
+wire    {{ instance_name }}_m_axi_{{ interface_name }}_AWVALID;
+wire   [63:0] {{ instance_name }}_m_axi_{{ interface_name }}_AWADDR;
+wire   [0:0] {{ instance_name }}_m_axi_{{ interface_name }}_AWID;
+wire   [31:0] {{ instance_name }}_m_axi_{{ interface_name }}_AWLEN;
+wire   [2:0] {{ instance_name }}_m_axi_{{ interface_name }}_AWSIZE;
+wire   [1:0] {{ instance_name }}_m_axi_{{ interface_name }}_AWBURST;
+wire   [1:0] {{ instance_name }}_m_axi_{{ interface_name }}_AWLOCK;
+wire   [3:0] {{ instance_name }}_m_axi_{{ interface_name }}_AWCACHE;
+wire   [2:0] {{ instance_name }}_m_axi_{{ interface_name }}_AWPROT;
+wire   [3:0] {{ instance_name }}_m_axi_{{ interface_name }}_AWQOS;
+wire   [3:0] {{ instance_name }}_m_axi_{{ interface_name }}_AWREGION;
+wire   [0:0] {{ instance_name }}_m_axi_{{ interface_name }}_AWUSER;
+wire    {{ instance_name }}_m_axi_{{ interface_name }}_WVALID;
+wire   [{{WDATA_width - 1}}:0] {{ instance_name }}_m_axi_{{ interface_name }}_WDATA;
+wire   [{{WSTRB_width - 1}}:0] {{ instance_name }}_m_axi_{{ interface_name }}_WSTRB;
+wire    {{ instance_name }}_m_axi_{{ interface_name }}_WLAST;
+wire   [0:0] {{ instance_name }}_m_axi_{{ interface_name }}_WID;
+wire   [0:0] {{ instance_name }}_m_axi_{{ interface_name }}_WUSER;
+wire    {{ instance_name }}_m_axi_{{ interface_name }}_ARVALID;
+wire   [63:0] {{ instance_name }}_m_axi_{{ interface_name }}_ARADDR;
+wire   [0:0] {{ instance_name }}_m_axi_{{ interface_name }}_ARID;
+wire   [31:0] {{ instance_name }}_m_axi_{{ interface_name }}_ARLEN;
+wire   [2:0] {{ instance_name }}_m_axi_{{ interface_name }}_ARSIZE;
+wire   [1:0] {{ instance_name }}_m_axi_{{ interface_name }}_ARBURST;
+wire   [1:0] {{ instance_name }}_m_axi_{{ interface_name }}_ARLOCK;
+wire   [3:0] {{ instance_name }}_m_axi_{{ interface_name }}_ARCACHE;
+wire   [2:0] {{ instance_name }}_m_axi_{{ interface_name }}_ARPROT;
+wire   [3:0] {{ instance_name }}_m_axi_{{ interface_name }}_ARQOS;
+wire   [3:0] {{ instance_name }}_m_axi_{{ interface_name }}_ARREGION;
+wire   [0:0] {{ instance_name }}_m_axi_{{ interface_name }}_ARUSER;
+wire    {{ instance_name }}_m_axi_{{ interface_name }}_RREADY;
+wire    {{ instance_name }}_m_axi_{{ interface_name }}_BREADY;
+
+{%- for signal_name, signal_width in final_dict.items() %}
+  {%- set is_scalar = (signal_width == 1) %}
+  {%- if '_address0' in signal_name or '_address1' in signal_name or '_ce0' in signal_name or '_ce1' in signal_name or '_we0' in signal_name or '_we1' in signal_name or '_d0' in signal_name or '_d1' in signal_name or '_din' in signal_name or '_write' in signal_name %}
+    {%- if is_scalar %}
+wire {{ instance_name }}_{{ signal_name }};
+    {%- else %}
+wire [{{ signal_width - 1 }}:0] {{ instance_name }}_{{ signal_name }};
+    {%- endif %}
+  {%- else %}
+    {%- if is_scalar %}
+reg {{ instance_name }}_{{ signal_name }};
+    {%- else %}
+reg [{{ signal_width - 1 }}:0] {{ instance_name }}_{{ signal_name }};
+    {%- endif %}
+  {%- endif %}
+{%- endfor %}
+
+wire    {{ instance_name }}_m_axi_{{ interface_name }}_AWREADY;
+wire    {{ instance_name }}_m_axi_{{ interface_name }}_WREADY;
+wire    {{ instance_name }}_m_axi_{{ interface_name }}_ARREADY;
+wire    {{ instance_name }}_m_axi_{{ interface_name }}_RVALID;
+wire [{{data_width - 1}}:0] {{ instance_name }}_m_axi_{{ interface_name }}_RDATA;
+wire    {{ instance_name }}_m_axi_{{ interface_name }}_RLAST;
+wire    {{ instance_name }}_m_axi_{{ interface_name }}_RID;
+wire [8:0]  {{ instance_name }}_m_axi_{{ interface_name }}_RFIFONUM;
+wire    {{ instance_name }}_m_axi_{{ interface_name }}_RUSER;
+wire [1:0]  {{ instance_name }}_m_axi_{{ interface_name }}_RRESP;
+wire    {{ instance_name }}_m_axi_{{ interface_name }}_BVALID;
+wire [1:0]  {{ instance_name }}_m_axi_{{ interface_name }}_BRESP;
+wire  {{ instance_name }}_m_axi_{{ interface_name }}_BID;
+wire  {{ instance_name }}_m_axi_{{ interface_name }}_BUSER;
+
+assign {{ instance_name }}_m_axi_{{ interface_name }}_AWREADY = 1'b0;
+assign {{ instance_name }}_m_axi_{{ interface_name }}_WREADY = 1'b0;
+assign {{ instance_name }}_m_axi_{{ interface_name }}_ARREADY = {{ interface_name }}_ARREADY;
+assign {{ instance_name }}_m_axi_{{ interface_name }}_RVALID = {{ interface_name }}_RVALID;
+assign {{ instance_name }}_m_axi_{{ interface_name }}_RDATA = {{ interface_name }}_RDATA;
+assign {{ instance_name }}_m_axi_{{ interface_name }}_RLAST = 1'b0;
+assign {{ instance_name }}_m_axi_{{ interface_name }}_RID = 1'd0;
+assign {{ instance_name }}_m_axi_{{ interface_name }}_RFIFONUM = {{ interface_name }}_RFIFONUM;
+assign {{ instance_name }}_m_axi_{{ interface_name }}_RUSER = 1'd0;
+assign {{ instance_name }}_m_axi_{{ interface_name }}_RRESP = 2'd0;
+assign {{ instance_name }}_m_axi_{{ interface_name }}_BVALID = 1'b0;
+assign {{ instance_name }}_m_axi_{{ interface_name }}_BRESP = 2'd0;
+assign {{ instance_name }}_m_axi_{{ interface_name }}_BID = 1'd0;
+assign {{ instance_name }}_m_axi_{{ interface_name }}_BUSER = 1'd0;
+
+{%- macro last_token_in_suffixes(port, suffixes) -%}
+    {%- set tokens = port.split('_') %}
+    {%- set last_tok = tokens[-1] %}
+    {%- for s in suffixes %}
+        {%- if last_tok == s -%}
+            true
+            {%- break %}
+        {%- endif %}
+    {%- endfor %}
+{%- endmacro %}
+
+{{ top_func_name }} {{ instance_name }}(
+    {%- for port in port_list %}
+    .{{ port }}(
+        {%- if port in fixed_ports_map -%}
+            {{ fixed_ports_map[port] }}
+        {%- else -%}
+            {{ instance_name ~ "_" ~ port }}
+        {%- endif -%}
+    ){% if not loop.last %},{% endif %}
+    {%- endfor %}
+);
+
+

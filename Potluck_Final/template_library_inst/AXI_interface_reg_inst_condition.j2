@@ -1,0 +1,46 @@
+
+reg [{{ bit_width - 1 }}:0] sel_{{ input_AXI_reg }};
+
+always @ (*) begin
+    case (sel_{{ input_AXI_reg }})
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ input_AXI_reg }} = {{ mapping.func_name }};
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ input_AXI_reg }} = 'bx;
+        end
+        default: begin
+            {{ input_AXI_reg }} = 'bx;
+        end
+    endcase
+end
+
+
+always @ (*) begin
+    if (ap_CS_fsm[{{ load_inst_state }}] != 1'b1 && ap_rst_n_inv == 1'b0) begin
+        {% set ns = namespace(first=true) %}
+        {%- for reg_name, pairs in cond_index_pairs.items() %}
+            {%- for p in pairs %}
+                {%- if ns.first %}
+        if ({{ reg_name }}_ap_vld == 1'b1 && {{ reg_name }} == 32'd{{ p.sel }}) begin
+            sel_{{ input_AXI_reg }} = {{ bit_width }}'d{{ p.idx }};
+        end
+                    {% set ns.first = false %}
+                {%- else %}
+        else if ({{ reg_name }}_ap_vld == 1'b1 && {{ reg_name }} == 32'd{{ p.sel }}) begin
+            sel_{{ input_AXI_reg }} = {{ bit_width }}'d{{ p.idx }};
+        end
+                {%- endif %}
+            {%- endfor %}
+        {%- endfor %}
+        else begin
+            sel_{{ input_AXI_reg }} = {{ bit_width }}'d0;
+        end
+    end else begin
+        sel_{{ input_AXI_reg }} = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end
+

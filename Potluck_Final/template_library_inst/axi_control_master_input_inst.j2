@@ -1,0 +1,180 @@
+{%- set axi_name = extract_axi_name(module_name) %}
+
+parameter    C_M_AXI_{{ axi_name | upper }}_ID_WIDTH = {{ C_M_AXI_ID_WIDTH }};
+parameter    C_M_AXI_{{ axi_name | upper }}_ADDR_WIDTH = {{ C_M_AXI_ADDR_WIDTH }};
+parameter    C_M_AXI_{{ axi_name | upper }}_DATA_WIDTH = {{ C_M_AXI_DATA_WIDTH }};
+parameter    C_M_AXI_{{ axi_name | upper }}_AWUSER_WIDTH = {{ C_M_AXI_AWUSER_WIDTH }};
+parameter    C_M_AXI_{{ axi_name | upper }}_ARUSER_WIDTH = {{ C_M_AXI_ARUSER_WIDTH }};
+parameter    C_M_AXI_{{ axi_name | upper }}_WUSER_WIDTH = {{ C_M_AXI_WUSER_WIDTH }};
+parameter    C_M_AXI_{{ axi_name | upper }}_RUSER_WIDTH = {{ C_M_AXI_RUSER_WIDTH }};
+parameter    C_M_AXI_{{ axi_name | upper }}_BUSER_WIDTH = {{ C_M_AXI_BUSER_WIDTH }};
+parameter    C_M_AXI_{{ axi_name | upper }}_USER_VALUE = {{ C_M_AXI_USER_VALUE }};
+parameter    C_M_AXI_{{ axi_name | upper }}_PROT_VALUE = {{ C_M_AXI_PROT_VALUE }};
+parameter    C_M_AXI_{{ axi_name | upper }}_CACHE_VALUE = {{ C_M_AXI_CACHE_VALUE }};
+parameter    C_M_AXI_{{ axi_name | upper }}_WSTRB_WIDTH = {{ ((C_M_AXI_DATA_WIDTH / 8) | int) }};
+
+
+output   m_axi_{{ axi_name }}_AWVALID;
+input   m_axi_{{ axi_name }}_AWREADY;
+output  [C_M_AXI_{{ axi_name | upper }}_ADDR_WIDTH - 1:0] m_axi_{{ axi_name }}_AWADDR;
+output  [C_M_AXI_{{ axi_name | upper }}_ID_WIDTH - 1:0] m_axi_{{ axi_name }}_AWID;
+output  [7:0] m_axi_{{ axi_name }}_AWLEN;
+output  [2:0] m_axi_{{ axi_name }}_AWSIZE;
+output  [1:0] m_axi_{{ axi_name }}_AWBURST;
+output  [1:0] m_axi_{{ axi_name }}_AWLOCK;
+output  [3:0] m_axi_{{ axi_name }}_AWCACHE;
+output  [2:0] m_axi_{{ axi_name }}_AWPROT;
+output  [3:0] m_axi_{{ axi_name }}_AWQOS;
+output  [3:0] m_axi_{{ axi_name }}_AWREGION;
+output  [C_M_AXI_{{ axi_name | upper }}_AWUSER_WIDTH - 1:0] m_axi_{{ axi_name }}_AWUSER;
+output   m_axi_{{ axi_name }}_WVALID;
+input   m_axi_{{ axi_name }}_WREADY;
+output  [C_M_AXI_{{ axi_name | upper }}_DATA_WIDTH - 1:0] m_axi_{{ axi_name }}_WDATA;
+output  [C_M_AXI_{{ axi_name | upper }}_WSTRB_WIDTH - 1:0] m_axi_{{ axi_name }}_WSTRB;
+output   m_axi_{{ axi_name }}_WLAST;
+output  [C_M_AXI_{{ axi_name | upper }}_ID_WIDTH - 1:0] m_axi_{{ axi_name }}_WID;
+output  [C_M_AXI_{{ axi_name | upper }}_WUSER_WIDTH - 1:0] m_axi_{{ axi_name }}_WUSER;
+output   m_axi_{{ axi_name }}_ARVALID;
+input   m_axi_{{ axi_name }}_ARREADY;
+output  [C_M_AXI_{{ axi_name | upper }}_ADDR_WIDTH - 1:0] m_axi_{{ axi_name }}_ARADDR;
+output  [C_M_AXI_{{ axi_name | upper }}_ID_WIDTH - 1:0] m_axi_{{ axi_name }}_ARID;
+output  [7:0] m_axi_{{ axi_name }}_ARLEN;
+output  [2:0] m_axi_{{ axi_name }}_ARSIZE;
+output  [1:0] m_axi_{{ axi_name }}_ARBURST;
+output  [1:0] m_axi_{{ axi_name }}_ARLOCK;
+output  [3:0] m_axi_{{ axi_name }}_ARCACHE;
+output  [2:0] m_axi_{{ axi_name }}_ARPROT;
+output  [3:0] m_axi_{{ axi_name }}_ARQOS;
+output  [3:0] m_axi_{{ axi_name }}_ARREGION;
+output  [C_M_AXI_{{ axi_name | upper }}_ARUSER_WIDTH - 1:0] m_axi_{{ axi_name }}_ARUSER;
+input   m_axi_{{ axi_name }}_RVALID;
+output   m_axi_{{ axi_name }}_RREADY;
+input  [C_M_AXI_{{ axi_name | upper }}_DATA_WIDTH - 1:0] m_axi_{{ axi_name }}_RDATA;
+input   m_axi_{{ axi_name }}_RLAST;
+input  [C_M_AXI_{{ axi_name | upper }}_ID_WIDTH - 1:0] m_axi_{{ axi_name }}_RID;
+input  [C_M_AXI_{{ axi_name | upper }}_RUSER_WIDTH - 1:0] m_axi_{{ axi_name }}_RUSER;
+input  [1:0] m_axi_{{ axi_name }}_RRESP;
+input   m_axi_{{ axi_name }}_BVALID;
+output   m_axi_{{ axi_name }}_BREADY;
+input  [1:0] m_axi_{{ axi_name }}_BRESP;
+input  [C_M_AXI_{{ axi_name | upper }}_ID_WIDTH - 1:0] m_axi_{{ axi_name }}_BID;
+input  [C_M_AXI_{{ axi_name | upper }}_BUSER_WIDTH - 1:0] m_axi_{{ axi_name }}_BUSER;
+
+
+wire    {{ axi_name }}_AWREADY;
+wire    {{ axi_name }}_WREADY;
+reg    {{ axi_name }}_ARVALID;
+wire    {{ axi_name }}_ARREADY;
+wire    {{ axi_name }}_RVALID;
+reg    {{ axi_name }}_RREADY;
+wire   [{{C_M_AXI_DATA_WIDTH - 1}}:0] {{ axi_name }}_RDATA;
+wire   [8:0] {{ axi_name }}_RFIFONUM;
+wire    {{ axi_name }}_BVALID;
+
+wire {{ axi_name }}_AWVALID;
+wire [63:0] {{ axi_name }}_AWADDR;
+wire [31:0] {{ axi_name }}_AWLEN;
+wire {{ axi_name }}_WVALID;
+wire [{{C_M_AXI_DATA_WIDTH - 1}}:0] {{ axi_name }}_WDATA;
+wire [{{ ((C_M_AXI_DATA_WIDTH / 8) | int) - 1 }}:0] {{ axi_name }}_WSTRB;
+wire {{ axi_name }}_BREADY;
+wire [63:0] {{ axi_name }}_ARADDR;
+wire [31:0] {{ axi_name }}_ARLEN;
+
+assign {{ axi_name }}_AWVALID = {{ AWVALID }};
+assign {{ axi_name }}_AWADDR = {{ AWADDR }};
+assign {{ axi_name }}_AWLEN = {{ AWLEN }};
+assign {{ axi_name }}_WVALID = {{ WVALID }};
+assign {{ axi_name }}_WDATA = {{ WDATA }};
+assign {{ axi_name }}_WSTRB = {{ WSTRB }};
+assign {{ axi_name }}_BREADY = {{ BREADY }};
+
+{{ module_name }} #(
+    .CONSERVATIVE( {{ CONSERVATIVE }} ),
+    .USER_MAXREQS( {{ USER_MAXREQS }} ),
+    .MAX_READ_BURST_LENGTH( {{ MAX_READ_BURST_LENGTH }} ),
+    .MAX_WRITE_BURST_LENGTH( {{ MAX_WRITE_BURST_LENGTH }} ),
+    .C_M_AXI_ID_WIDTH( C_M_AXI_{{ axi_name | upper }}_ID_WIDTH ),
+    .C_M_AXI_ADDR_WIDTH( C_M_AXI_{{ axi_name | upper }}_ADDR_WIDTH ),
+    .C_M_AXI_DATA_WIDTH( C_M_AXI_{{ axi_name | upper }}_DATA_WIDTH ),
+    .C_M_AXI_AWUSER_WIDTH( C_M_AXI_{{ axi_name | upper }}_AWUSER_WIDTH ),
+    .C_M_AXI_ARUSER_WIDTH( C_M_AXI_{{ axi_name | upper }}_ARUSER_WIDTH ),
+    .C_M_AXI_WUSER_WIDTH( C_M_AXI_{{ axi_name | upper }}_WUSER_WIDTH ),
+    .C_M_AXI_RUSER_WIDTH( C_M_AXI_{{ axi_name | upper }}_RUSER_WIDTH ),
+    .C_M_AXI_BUSER_WIDTH( C_M_AXI_{{ axi_name | upper }}_BUSER_WIDTH ),
+    .C_USER_VALUE( C_M_AXI_{{ axi_name | upper }}_USER_VALUE ),
+    .C_PROT_VALUE( C_M_AXI_{{ axi_name | upper }}_PROT_VALUE ),
+    .C_CACHE_VALUE( C_M_AXI_{{ axi_name | upper }}_CACHE_VALUE ),
+    .CH0_USER_RFIFONUM_WIDTH( {{ CH0_USER_RFIFONUM_WIDTH }} ),
+    .CH0_USER_DW( {{ CH0_USER_DW }} ),
+    .CH0_USER_AW( {{ CH0_USER_AW }} ),
+    .NUM_READ_OUTSTANDING( {{ NUM_READ_OUTSTANDING }} ),
+    .NUM_WRITE_OUTSTANDING( {{ NUM_WRITE_OUTSTANDING }} ))
+{{ axi_name }}_m_axi_U(
+    .AWVALID(m_axi_{{ axi_name }}_AWVALID),
+    .AWREADY(m_axi_{{ axi_name }}_AWREADY),
+    .AWADDR(m_axi_{{ axi_name }}_AWADDR),
+    .AWID(m_axi_{{ axi_name }}_AWID),
+    .AWLEN(m_axi_{{ axi_name }}_AWLEN),
+    .AWSIZE(m_axi_{{ axi_name }}_AWSIZE),
+    .AWBURST(m_axi_{{ axi_name }}_AWBURST),
+    .AWLOCK(m_axi_{{ axi_name }}_AWLOCK),
+    .AWCACHE(m_axi_{{ axi_name }}_AWCACHE),
+    .AWPROT(m_axi_{{ axi_name }}_AWPROT),
+    .AWQOS(m_axi_{{ axi_name }}_AWQOS),
+    .AWREGION(m_axi_{{ axi_name }}_AWREGION),
+    .AWUSER(m_axi_{{ axi_name }}_AWUSER),
+    .WVALID(m_axi_{{ axi_name }}_WVALID),
+    .WREADY(m_axi_{{ axi_name }}_WREADY),
+    .WDATA(m_axi_{{ axi_name }}_WDATA),
+    .WSTRB(m_axi_{{ axi_name }}_WSTRB),
+    .WLAST(m_axi_{{ axi_name }}_WLAST),
+    .WID(m_axi_{{ axi_name }}_WID),
+    .WUSER(m_axi_{{ axi_name }}_WUSER),
+    .ARVALID(m_axi_{{ axi_name }}_ARVALID),
+    .ARREADY(m_axi_{{ axi_name }}_ARREADY),
+    .ARADDR(m_axi_{{ axi_name }}_ARADDR),
+    .ARID(m_axi_{{ axi_name }}_ARID),
+    .ARLEN(m_axi_{{ axi_name }}_ARLEN),
+    .ARSIZE(m_axi_{{ axi_name }}_ARSIZE),
+    .ARBURST(m_axi_{{ axi_name }}_ARBURST),
+    .ARLOCK(m_axi_{{ axi_name }}_ARLOCK),
+    .ARCACHE(m_axi_{{ axi_name }}_ARCACHE),
+    .ARPROT(m_axi_{{ axi_name }}_ARPROT),
+    .ARQOS(m_axi_{{ axi_name }}_ARQOS),
+    .ARREGION(m_axi_{{ axi_name }}_ARREGION),
+    .ARUSER(m_axi_{{ axi_name }}_ARUSER),
+    .RVALID(m_axi_{{ axi_name }}_RVALID),
+    .RREADY(m_axi_{{ axi_name }}_RREADY),
+    .RDATA(m_axi_{{ axi_name }}_RDATA),
+    .RLAST(m_axi_{{ axi_name }}_RLAST),
+    .RID(m_axi_{{ axi_name }}_RID),
+    .RUSER(m_axi_{{ axi_name }}_RUSER),
+    .RRESP(m_axi_{{ axi_name }}_RRESP),
+    .BVALID(m_axi_{{ axi_name }}_BVALID),
+    .BREADY(m_axi_{{ axi_name }}_BREADY),
+    .BRESP(m_axi_{{ axi_name }}_BRESP),
+    .BID(m_axi_{{ axi_name }}_BID),
+    .BUSER(m_axi_{{ axi_name }}_BUSER),
+    .ACLK(ap_clk),
+    .ARESET(ap_rst_n_inv),
+    .ACLK_EN(1'b1),
+    .I_CH0_ARVALID({{ axi_name }}_ARVALID),
+    .I_CH0_ARREADY({{ axi_name }}_ARREADY),
+    .I_CH0_ARADDR({{ axi_name }}_ARADDR),
+    .I_CH0_ARLEN({{ axi_name }}_ARLEN),
+    .I_CH0_RVALID({{ axi_name }}_RVALID),
+    .I_CH0_RREADY({{ axi_name }}_RREADY),
+    .I_CH0_RDATA({{ axi_name }}_RDATA),
+    .I_CH0_RFIFONUM({{ axi_name }}_RFIFONUM),
+    .I_CH0_AWVALID({{ axi_name }}_AWVALID),
+    .I_CH0_AWREADY({{ axi_name }}_AWREADY),
+    .I_CH0_AWADDR({{ axi_name }}_AWADDR),
+    .I_CH0_AWLEN({{ axi_name }}_AWLEN),
+    .I_CH0_WVALID({{ axi_name }}_WVALID),
+    .I_CH0_WREADY({{ axi_name }}_WREADY),
+    .I_CH0_WDATA({{ axi_name }}_WDATA),
+    .I_CH0_WSTRB({{ axi_name }}_WSTRB),
+    .I_CH0_BVALID({{ axi_name }}_BVALID),
+    .I_CH0_BREADY({{ axi_name }}_BREADY)
+);

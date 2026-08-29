@@ -1,0 +1,57 @@
+reg [{{ bit_width - 1 }}:0] sel_{{ input_AXI_name }}_ARVALID;
+always @ (*) begin
+    case (sel_{{ input_AXI_name }}_ARVALID)
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ input_AXI_name }}_ARVALID = {{ mapping.func_name }}_ARVALID;
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ input_AXI_name }}_ARVALID = {{ bit_width }}'d0;
+        end
+        default: begin
+            {{ input_AXI_name }}_ARVALID = {{ bit_width }}'d0;
+        end
+    endcase
+end
+
+always @ (*) begin
+    if (ap_CS_fsm[{{load_inst_state}}] != 1'b1 && ap_rst_n_inv == 1'b0) begin
+        sel_{{ input_AXI_name }}_ARVALID = 1'd0;
+    end else begin
+        // Assign the default code: 2^bit_width - 1
+        sel_{{ input_AXI_name }}_ARVALID = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end
+
+reg [{{ bit_width - 1 }}:0] sel_{{ input_AXI_name }}_RREADY;
+always @ (*) begin
+    case (sel_{{ input_AXI_name }}_RREADY)
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ input_AXI_name }}_RREADY = {{ mapping.func_name }}_RREADY;
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ input_AXI_name }}_RREADY = {{ bit_width }}'d0;
+        end
+        default: begin
+            {{ input_AXI_name }}_RREADY = {{ bit_width }}'d0;
+        end
+    endcase
+end
+
+always @ (*) begin
+    if (ap_CS_fsm[{{load_inst_state}}] != 1'b1 && ap_rst_n_inv == 1'b0) begin
+        sel_{{ input_AXI_name }}_RREADY = 1'd0;
+    end else begin
+        // Assign the default code: 2^bit_width - 1
+        sel_{{ input_AXI_name }}_RREADY = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end
+
+
+
+

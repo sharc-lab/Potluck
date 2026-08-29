@@ -1,0 +1,42 @@
+{
+    "DRAM_input": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_128_mem1_32_axi_dram_1",
+        "dram_array_1"
+    ],
+    "DRAM_weight_one": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_256_mem1_32_axi_dram_1",
+        "dram_array_2"
+    ],
+    "DRAM_weight_two": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_256_mem1_32_axi_dram_2",
+        "dram_array_3"
+    ],
+    "DRAM_weight_three": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_256_mem1_32_axi_dram_3",
+        "dram_array_4"
+    ],
+    "DRAM_weight_four": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_256_mem1_32_axi_dram_4",
+        "dram_array_5"
+    ],
+    "DRAM_weight_five": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_256_mem1_32_axi_dram_5",
+        "dram_array_6"
+    ],
+    "DRAM_weight_six": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_256_mem1_32_axi_dram_6",
+        "dram_array_7"
+    ],
+    "DRAM_weight_seven": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_256_mem1_32_axi_dram_7",
+        "dram_array_8"
+    ],
+    "DRAM_weight_ten": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_256_mem1_32_axi_dram_8",
+        "dram_array_9"
+    ],
+    "DRAM_output": [
+        "w_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_128_mem2_32_axi_dram_1",
+        "dram_array_10"
+    ]
+}

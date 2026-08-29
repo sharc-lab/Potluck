@@ -1,0 +1,22 @@
+{
+    "dram_input_1": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_8192_mem1_32_axi_dram_1",
+        "dram_array_1"
+    ],
+    "dram_input_2": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_8192_mem1_32_axi_dram_2",
+        "dram_array_2"
+    ],
+    "dram_input_3": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_8192_mem1_32_axi_dram_3",
+        "dram_array_3"
+    ],
+    "dram_input_4": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_8192_mem1_32_axi_dram_4",
+        "dram_array_4"
+    ],
+    "dram_output": [
+        "w_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_8192_mem2_32_axi_dram_1",
+        "dram_array_5"
+    ]
+}

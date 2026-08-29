@@ -1,0 +1,47 @@
+//------------------------AXI write fsm------------------
+assign AWREADY = (wstate == WRIDLE);
+assign WREADY  = (wstate == WRDATA);
+assign BRESP   = 2'b00;  // OKAY
+assign BVALID  = (wstate == WRRESP);
+assign wmask   = { {8{WSTRB[3]}}, {8{WSTRB[2]}}, {8{WSTRB[1]}}, {8{WSTRB[0]}} };
+assign aw_hs   = AWVALID & AWREADY;
+assign w_hs    = WVALID & WREADY;
+
+// wstate
+always @(posedge ACLK) begin
+    if (ARESET)
+        wstate <= WRRESET;
+    else if (ACLK_EN)
+        wstate <= wnext;
+end
+
+// wnext
+always @(*) begin
+    case (wstate)
+        WRIDLE:
+            if (AWVALID)
+                wnext = WRDATA;
+            else
+                wnext = WRIDLE;
+        WRDATA:
+            if (WVALID)
+                wnext = WRRESP;
+            else
+                wnext = WRDATA;
+        WRRESP:
+            if (BREADY)
+                wnext = WRIDLE;
+            else
+                wnext = WRRESP;
+        default:
+            wnext = WRIDLE;
+    endcase
+end
+
+// waddr
+always @(posedge ACLK) begin
+    if (ACLK_EN) begin
+        if (aw_hs)
+            waddr <= {AWADDR[ADDR_BITS-1:2], {2{1'b0}}};
+    end
+end

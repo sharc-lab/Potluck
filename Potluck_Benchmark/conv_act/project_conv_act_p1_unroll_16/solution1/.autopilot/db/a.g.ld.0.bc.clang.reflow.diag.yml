@@ -1,0 +1,1507 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h, 
+                   Line: 515, Column: 36 }
+Function:        _ZN10exp_reduce3expILi32ELi10EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_515_16
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h, 
+                   Line: 511, Column: 36 }
+Function:        _ZN10exp_reduce3expILi32ELi10EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_511_15
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h, 
+                   Line: 505, Column: 32 }
+Function:        _ZN10exp_reduce3expILi32ELi10EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_505_14
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h, 
+                   Line: 276, Column: 36 }
+Function:        _ZN10exp_reduce3expILi32ELi10EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_276_13
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h, 
+                   Line: 268, Column: 28 }
+Function:        _ZN10exp_reduce3expILi32ELi10EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_268_12
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 247, Column: 0 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          elu_activation
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h, 
+                   Line: 14, Column: 0 }
+Function:        _ZN10exp_reduce3expILi32ELi10EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_515_16
+  - String:          ''' ('
+  - LoopLoc:         '/tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h:515:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'exp_reduce::exp<32, 10>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h, 
+                   Line: 14, Column: 0 }
+Function:        _ZN10exp_reduce3expILi32ELi10EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_511_15
+  - String:          ''' ('
+  - LoopLoc:         '/tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h:511:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'exp_reduce::exp<32, 10>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '14'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h, 
+                   Line: 14, Column: 0 }
+Function:        _ZN10exp_reduce3expILi32ELi10EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_505_14
+  - String:          ''' ('
+  - LoopLoc:         '/tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h:505:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'exp_reduce::exp<32, 10>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '14'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h, 
+                   Line: 14, Column: 0 }
+Function:        _ZN10exp_reduce3expILi32ELi10EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_276_13
+  - String:          ''' ('
+  - LoopLoc:         '/tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h:276:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'exp_reduce::exp<32, 10>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '46'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h, 
+                   Line: 14, Column: 0 }
+Function:        _ZN10exp_reduce3expILi32ELi10EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_268_12
+  - String:          ''' ('
+  - LoopLoc:         '/tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h:268:28'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'exp_reduce::exp<32, 10>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '19'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_119_8
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:119:43'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 94, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_104_3
+  - String:          ''' ('
+  - LoopLoc:         'p1_unroll_16.cpp:104:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2d
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 27, Column: 0 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BRAM_buffer_2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 26, Column: 0 }
+Function:        _Z6conv2dPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA64_A3_A3_S2_PS2_S5_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BRAM_buffer_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 25, Column: 0 }
+Function:        _Z9load_biasP8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BRAM_conv_bias
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 24, Column: 0 }
+Function:        _Z11load_weightPA64_A3_A3_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BRAM_conv_weight
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 23, Column: 0 }
+Function:        _Z10load_imagePA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          BRAM_image_input
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+Function:        apatb_top_ir
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            DRAM_image_output
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '32'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+Function:        apatb_top_ir
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            DRAM_conv_weight
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '32'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+Function:        apatb_top_ir
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            DRAM_image_input
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '32'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 35, Column: 19 }
+Function:        _Z10load_imagePA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '1600'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        input1seq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      mem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_35_1
+  - String:          ' '
+  - LoopLoc:         'p1_unroll_16.cpp:35:19'
+  - String:          ' '
+  - Function:        'load_image(ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [5][5], ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [5][5])'
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 33, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 38, Column: 42 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.37
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 47, Column: 19 }
+Function:        _Z11load_weightPA64_A3_A3_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES6_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '36864'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        input1seq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      mem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_47_1
+  - String:          ' '
+  - LoopLoc:         'p1_unroll_16.cpp:47:19'
+  - String:          ' '
+  - Function:        'load_weight(ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64][3][3], ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64][3][3])'
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 45, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 51, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.517
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 61, Column: 19 }
+Function:        _Z9load_biasP8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '64'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        input2seq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      mem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_61_1
+  - String:          ' '
+  - LoopLoc:         'p1_unroll_16.cpp:61:19'
+  - String:          ' '
+  - Function:        'load_bias(ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 59, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 62, Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.38
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 136, Column: 20 }
+Function:        _Z5storePA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '1600'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        output1seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      mem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_136_1
+  - String:          ' '
+  - LoopLoc:         'p1_unroll_16.cpp:136:20'
+  - String:          ' '
+  - Function:        'store(ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [5][5], ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [5][5])'
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 134, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 139, Column: 42 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.store.39
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 35, Column: 19 }
+Function:        _Z10load_imagePA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 35, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          input1seq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      mem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ' '
+  - LoopLoc:         'p1_unroll_16.cpp:37:30'
+  - String:          ' '
+  - Function:        'load_image(ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [5][5], ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [5][5])'
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 33, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 47, Column: 19 }
+Function:        _Z11load_weightPA64_A3_A3_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES6_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 47, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          input1seq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      mem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_50_4
+  - String:          ' '
+  - LoopLoc:         'p1_unroll_16.cpp:50:34'
+  - String:          ' '
+  - Function:        'load_weight(ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64][3][3], ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64][3][3])'
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 45, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 61, Column: 19 }
+Function:        _Z9load_biasP8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 61, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          input2seq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      mem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_61_1
+  - String:          ' '
+  - LoopLoc:         'p1_unroll_16.cpp:61:19'
+  - String:          ' '
+  - Function:        'load_bias(ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 59, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 136, Column: 20 }
+Function:        _Z5storePA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 136, Column: 20 }
+  - OrigDirection:   write
+  - OrigID:          output1seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      mem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_138_3
+  - String:          ' '
+  - LoopLoc:         'p1_unroll_16.cpp:138:31'
+  - String:          ' '
+  - Function:        'store(ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [5][5], ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [5][5])'
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 134, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.1
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.2
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.3
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.4
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.5
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.6
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.7
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.8
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.9
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.10
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.11
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.12
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.13
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.14
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 261, Column: 48 }
+Function:        _Z14elu_activationPA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _ZN8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit60.15
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ') .'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_138_3
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:138:31'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_254_3
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:254:31'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_104_3
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:104:31'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_121_9
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:121:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_61_1
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:61:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_50_4
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:50:34'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          '> at '
+  - LoopLoc:         'p1_unroll_16.cpp:37:30'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 35, Column: 19 }
+Function:        _Z10load_imagePA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '1600'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      mem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_35_1
+  - String:          ' '
+  - LoopLoc:         'p1_unroll_16.cpp:35:19'
+  - String:          ' '
+  - Function:        'load_image(ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [5][5], ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [5][5]) (.1)'
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 33, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 35, Column: 19 }
+Function:        _Z10load_imagePA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '1600'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_35_1
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:35:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      mem1
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 47, Column: 19 }
+Function:        _Z11load_weightPA64_A3_A3_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES6_.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '36864'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      mem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_47_1
+  - String:          ' '
+  - LoopLoc:         'p1_unroll_16.cpp:47:19'
+  - String:          ' '
+  - Function:        'load_weight(ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64][3][3], ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [64][3][3]) (.1)'
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 45, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 47, Column: 19 }
+Function:        _Z11load_weightPA64_A3_A3_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES6_.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '36864'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_47_1
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:47:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      mem1
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 61, Column: 19 }
+Function:        _Z9load_biasP8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '64'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      mem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_61_1
+  - String:          ' '
+  - LoopLoc:         'p1_unroll_16.cpp:61:19'
+  - String:          ' '
+  - Function:        'load_bias(ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0>*) (.1)'
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 59, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 61, Column: 19 }
+Function:        _Z9load_biasP8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '64'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_61_1
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:61:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      mem1
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 136, Column: 20 }
+Function:        _Z5storePA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '1600'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      mem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_136_1
+  - String:          ' '
+  - LoopLoc:         'p1_unroll_16.cpp:136:20'
+  - String:          ' '
+  - Function:        'store(ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [5][5], ap_fixed<32, 10, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [5][5]) (.1)'
+    DebugLoc:        { File: p1_unroll_16.cpp, Line: 134, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: p1_unroll_16.cpp, Line: 136, Column: 20 }
+Function:        _Z5storePA5_A5_8ap_fixedILi32ELi10EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '1600'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_136_1
+  - String:          '''('
+  - LoopLoc:         'p1_unroll_16.cpp:136:20'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      mem2
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

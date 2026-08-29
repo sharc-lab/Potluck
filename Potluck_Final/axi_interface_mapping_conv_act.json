@@ -1,0 +1,8 @@
+{
+  "mappings": {
+    "mem1":  ["load_image", "load_weight", "load_bias"],
+    "mem2": ["store"],
+    "INPUT2":   ["load_inst"] 
+  }
+}
+

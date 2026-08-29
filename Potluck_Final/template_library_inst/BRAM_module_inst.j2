@@ -1,0 +1,99 @@
+{% for mod in BRAM_modules %}
+{% set prefix = mod.instance_name.split('_U')[0] %}
+reg   [{{ mod.AddressWidth - 1 }}:0] {{ prefix }}_address0;
+reg   {{ prefix }}_ce0;
+reg   {{ prefix }}_we0;
+reg   [{{ mod.DataWidth - 1 }}:0] {{ prefix }}_d0;
+wire  [{{ mod.DataWidth - 1 }}:0] {{ prefix }}_q0;
+{% endfor %}
+
+wire  if_full_n_inst_fifo;
+wire  [{{inst_fifo_module.AddressWidth - 1}}:0] if_num_data_valid_inst_fifo;
+wire  [{{inst_fifo_module.AddressWidth - 1}}:0] if_fifo_cap_inst_fifo;
+wire  if_empty_n_inst_fifo;
+reg   if_read_inst_fifo;
+wire  [{{inst_fifo_module.DataWidth - 1}}:0] if_dout_inst_fifo;
+wire  if_full_n_inst_fifo;
+wire  if_write_inst_fifo;  
+wire  [{{inst_fifo_module.DataWidth - 1}}:0] if_din_inst_fifo;
+
+{% for mod in load_inst_modules %}
+{% set prefix = mod.instance_name %}
+wire {{ prefix }}_ap_start;
+wire {{ prefix }}_ap_done;
+wire {{ prefix }}_ap_idle;
+wire {{ prefix }}_ap_ready;
+wire [{{inst_fifo_module.InstAddressWidth - 1}}:0] {{ prefix }}_address0;
+wire {{ prefix }}_ce0;
+reg  [{{inst_fifo_module.DataWidth - 1}}:0] {{ prefix }}_q0;
+{% endfor %}
+
+
+{{inst_fifo_module.module_name}} #(
+    .MEM_STYLE("shiftReg"),
+    .DATA_WIDTH({{inst_fifo_module.DataWidth}}),
+    .ADDR_WIDTH({{inst_fifo_module.AddressWidth}}),
+    .DEPTH({{inst_fifo_module.Depth}})
+) {{inst_fifo_module.instance_name}} (
+    .clk         (ap_clk),
+    .reset       (ap_rst_n_inv),
+    
+    // Write side 
+    .if_full_n   (if_full_n_inst_fifo),
+    .if_write_ce (1'b1),
+    .if_write    (if_write_inst_fifo),
+    .if_din      (if_din_inst_fifo),
+
+    // Read side
+    .if_num_data_valid (if_num_data_valid_inst_fifo),
+    .if_fifo_cap (if_fifo_cap_inst_fifo),
+    .if_empty_n  (if_empty_n_inst_fifo),
+    .if_read_ce  (1'b1),
+    .if_read     (if_read_inst_fifo),
+    .if_dout     (if_dout_inst_fifo)
+);
+
+
+{% for mod in BRAM_modules %}
+{% set prefix = mod.instance_name.split('_U')[0] %}
+{{ mod.module_name }} #(
+    .DataWidth( {{ mod.DataWidth }} ),
+    .AddressRange( {{ mod.AddressRange }} ),
+    .AddressWidth( {{ mod.AddressWidth }} ))
+{{ mod.instance_name }}(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0({{ prefix }}_address0),
+    .ce0({{ prefix }}_ce0),
+    .we0({{ prefix }}_we0),
+    .d0({{ prefix }}_d0),
+    .q0({{ prefix }}_q0)
+);
+{% endfor %}
+
+
+{% for mod in load_inst_modules %}
+{% set prefix = mod.instance_name %}
+{{ mod.module_name }} {{ mod.instance_name }}(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .ap_start({{ prefix }}_ap_start),
+    .ap_done({{ prefix }}_ap_done),
+    .ap_idle({{ prefix }}_ap_idle),
+    .ap_ready({{ prefix }}_ap_ready),
+    .inst_input_address0({{ prefix }}_address0),
+    .inst_input_ce0({{ prefix }}_ce0),
+    .inst_input_q0({{ prefix }}_q0),
+    .input_stream_din(if_din_inst_fifo),
+    .input_stream_full_n(if_full_n_inst_fifo),
+    .input_stream_write(if_write_inst_fifo),
+    .n({{mod.inst_num}})
+);
+{% endfor %}
+
+
+
+
+
+
+

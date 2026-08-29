@@ -1,0 +1,29 @@
+reg {{load_inst_instance_name}}_ap_start_reg;
+reg {{load_inst_instance_name}}_start_status_reg;
+always @ (posedge ap_clk) begin
+    if (ap_rst_n_inv == 1'b1) begin
+        {{load_inst_instance_name}}_ap_start_reg <= 1'b0;
+    end else begin
+        if (({{load_inst_instance_name}}_ap_ready == 1'b1)) begin
+            {{load_inst_instance_name}}_ap_start_reg <= 1'b0;
+        end else if ((1'b1 != ap_CS_fsm[{{initial_state}}]) && ({{load_inst_instance_name}}_start_status_reg == 1'b0)) begin
+            {{load_inst_instance_name}}_ap_start_reg <= 1'b1;
+        end 
+    end
+end
+
+assign {{load_inst_instance_name}}_ap_start = {{load_inst_instance_name}}_ap_start_reg;
+
+always @ (posedge ap_clk) begin
+    if (ap_rst_n_inv == 1'b1) begin
+        {{load_inst_instance_name}}_start_status_reg <= 1'b0;
+    end else if (({{ any_ap_vld }}) && ({{load_inst_instance_name}}_ap_ready == 1'b1)) begin
+        {{load_inst_instance_name}}_start_status_reg <= 1'b1;
+    end else if ((1'b1 != ap_CS_fsm[{{initial_state}}]) & ({{load_inst_instance_name}}_start_status_reg == 1'b0)) begin
+        {{load_inst_instance_name}}_start_status_reg <= 1'b1;
+    end else if (({{ any_ap_vld }})) begin
+        {{load_inst_instance_name}}_start_status_reg <= 1'b0;
+    end
+end
+
+

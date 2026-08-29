@@ -1,0 +1,38 @@
+{
+  "P1":   ["BRAM_image_input_1", "BRAM_image_input_2", "BRAM_image_input_3",
+          "BRAM_conv_weight_3x3_1", "BRAM_conv_weight_1x1_1",
+          "BRAM_conv_weight_3x3_2", "BRAM_conv_weight_1x1_2",
+          "BRAM_conv_weight_3x3_3", "BRAM_conv_weight_1x1_3",
+          "BRAM_conv_bias_3x3_1", "BRAM_conv_bias_1x1_1",
+          "BRAM_conv_bias_3x3_2", "BRAM_conv_bias_1x1_2",
+          "BRAM_conv_bias_3x3_3", "BRAM_conv_bias_1x1_3",
+          "BRAM_buffer_1", "BRAM_buffer_2", "BRAM_buffer_3",
+          "BRAM_buffer_4", "BRAM_buffer_5", "BRAM_buffer_6"],
+
+  "P2":   ["BRAM_image_input_1", "BRAM_image_input_2", "BRAM_image_input_3",
+          "BRAM_conv_weight_3x3_1", "BRAM_conv_weight_3x3_second_1",
+          "BRAM_conv_weight_3x3_2", "BRAM_conv_weight_3x3_second_2",
+          "BRAM_conv_weight_3x3_3", "BRAM_conv_weight_3x3_second_3",
+          "BRAM_conv_bias_3x3_1", "BRAM_conv_bias_3x3_second_1",
+          "BRAM_conv_bias_3x3_2", "BRAM_conv_bias_3x3_second_2",
+          "BRAM_conv_bias_3x3_3", "BRAM_conv_bias_3x3_second_3",
+          "BRAM_buffer_1", "BRAM_buffer_2", "BRAM_buffer_3",
+          "BRAM_buffer_4", "BRAM_buffer_5", "BRAM_buffer_6"],
+
+  "P3":   ["BRAM_image_input_1", "BRAM_image_input_2", "BRAM_image_input_3",
+          "BRAM_conv_weight_3x3_1", "BRAM_conv_weight_3x3_second_1",
+          "BRAM_conv_weight_3x3_2", "BRAM_conv_weight_3x3_second_2",
+          "BRAM_conv_weight_3x3_3", "BRAM_conv_weight_3x3_second_3",
+          "BRAM_conv_weight_1x1_1", "BRAM_conv_weight_1x1_2",
+          "BRAM_conv_weight_1x1_3",
+          "BRAM_conv_bias_3x3_1", "BRAM_conv_bias_3x3_second_1",
+          "BRAM_conv_bias_3x3_2", "BRAM_conv_bias_3x3_second_2",
+          "BRAM_conv_bias_3x3_3", "BRAM_conv_bias_3x3_second_3",
+          "BRAM_conv_bias_1x1_1", "BRAM_conv_bias_1x1_2",
+          "BRAM_conv_bias_1x1_3",
+          "BRAM_buffer_1", "BRAM_buffer_2", "BRAM_buffer_3",
+          "BRAM_buffer_4", "BRAM_buffer_5", "BRAM_buffer_6",
+          "BRAM_buffer_7", "BRAM_buffer_8",
+          "BRAM_buffer_9", "BRAM_buffer_10", "BRAM_buffer_11", "BRAM_buffer_12"]
+}
+

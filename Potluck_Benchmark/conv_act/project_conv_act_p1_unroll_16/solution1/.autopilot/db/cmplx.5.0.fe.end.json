@@ -1,0 +1,515 @@
+{
+    "1": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_914",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_9",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "load_image",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "32",
+        "instructions": "8",
+        "total_instructions": "117",
+        "calls": "16",
+        "basicblocks": "1"
+    },
+    "4": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_99",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "conv2d",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "88",
+        "instructions": "117",
+        "total_instructions": "3484",
+        "calls": "23 2 11 27 7 22 28 17 26 21 4 15 9 10 6 1 18",
+        "basicblocks": "18",
+        "loads": {
+            "G": "16",
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1",
+            "N": "4"
+        }
+    },
+    "6": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_913",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_93",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "load_bias_Pipeline_VITIS_LOOP_61_1",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "61",
+        "instructions": "70",
+        "total_instructions": "70",
+        "calls": "",
+        "basicblocks": "21",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_911",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_912",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_91",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "elu_activation",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "244",
+        "instructions": "214",
+        "total_instructions": "2246",
+        "calls": "25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25",
+        "basicblocks": "36",
+        "loads": {
+            "G": "16",
+            "L": "5"
+        },
+        "stores": {
+            "G": "16",
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "load_weight_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_49_3_VITIS_LOOP_",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "47",
+        "instructions": "886",
+        "total_instructions": "886",
+        "calls": "",
+        "basicblocks": "293",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "G": "256",
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "store",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "133",
+        "instructions": "9",
+        "total_instructions": "102",
+        "calls": "24",
+        "basicblocks": "1"
+    },
+    "15": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_910",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "16": {
+        "name": "load_image_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2_VITIS_LOOP_37_3",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "35",
+        "instructions": "109",
+        "total_instructions": "109",
+        "calls": "",
+        "basicblocks": "21",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "G": "16",
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "17": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_96",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "18": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_915",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "load_weight",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "44",
+        "instructions": "8",
+        "total_instructions": "894",
+        "calls": "13",
+        "basicblocks": "1"
+    },
+    "20": {
+        "name": "load_bias",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "58",
+        "instructions": "8",
+        "total_instructions": "78",
+        "calls": "8",
+        "basicblocks": "1"
+    },
+    "21": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_98",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "22": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_94",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "23": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "102",
+        "instructions": "119",
+        "total_instructions": "119",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "16",
+            "L": "5"
+        },
+        "stores": {
+            "G": "16",
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "24": {
+        "name": "store_Pipeline_VITIS_LOOP_136_1_VITIS_LOOP_137_2_VITIS_LOOP_138_3",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "136",
+        "instructions": "93",
+        "total_instructions": "93",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "16",
+            "L": "5"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "25": {
+        "name": "exp<32, 10>",
+        "file": "\/tools\/software\/xilinx\/ARCHIVE\/Vitis_HLS\/2024.1\/common\/technology\/autopilot\/etc\/hls_exp_apfixed.h",
+        "fileloc": "15",
+        "instructions": "127",
+        "total_instructions": "127",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "6"
+        }
+    },
+    "26": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_97",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "top",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "270",
+        "instructions": "25",
+        "total_instructions": "6946",
+        "calls": "3 19 20 5 12 14",
+        "basicblocks": "1"
+    },
+    "27": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_92",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "28": {
+        "name": "conv2d_Pipeline_VITIS_LOOP_121_95",
+        "file": "p1_unroll_16.cpp",
+        "fileloc": "121",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "32",
+            "L": "1"
+        },
+        "stores": {
+            "G": "16",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

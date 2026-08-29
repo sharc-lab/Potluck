@@ -1,0 +1,5 @@
+{
+  "P1":  ["BRAM_buffer_1", "BRAM_buffer_2", "BRAM_buffer_3", "BRAM_buffer_4", "BRAM_weight_buffer"],
+  "P2":  ["BRAM_buffer_1", "BRAM_buffer_2", "BRAM_buffer_3", "BRAM_buffer_4", "BRAM_weight_buffer"],
+  "P3":  ["BRAM_buffer_1", "BRAM_buffer_2", "BRAM_buffer_3", "BRAM_buffer_4", "BRAM_weight_buffer"]
+}

@@ -1,0 +1,25 @@
+{% for module_name in modules -%}
+reg {{module_name.name}}_ap_done_trigger;
+{% endfor %}
+
+{% for module_name in modules -%}
+reg {{module_name.name}}_ap_done_pre;
+{% endfor %}
+
+{% for module_name in modules -%}
+always @(posedge ap_clk) begin
+    if (ap_rst_n_inv == 1'b1) begin
+        {{module_name.name}}_ap_done_trigger <= 1'b0;
+        {{module_name.name}}_ap_done_pre <= 1'b0;
+    end else begin
+        {{module_name.name}}_ap_done_pre <= {{module_name.name}}_ap_done;
+        if ({{module_name.name}}_ap_done_pre == 1'b0 & {{module_name.name}}_ap_done == 1'b1) begin
+            {{module_name.name}}_ap_done_trigger <= 1'b1;
+        end else begin
+            {{module_name.name}}_ap_done_trigger <= 1'b0;
+        end
+    end
+end
+{% endfor -%}
+
+

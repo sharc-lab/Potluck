@@ -1,0 +1,11 @@
+input  [{{inst_length - 1}}:0] inst_TDATA;
+input   inst_TVALID;
+output   inst_TREADY;
+input  [{{ ((inst_length / 8) | int) - 1 }}:0] inst_TKEEP;
+input  [{{ ((inst_length / 8) | int) - 1 }}:0] inst_TSTRB;
+input  [0:0] inst_TUSER;
+input  [0:0] inst_TLAST;
+input  [0:0] inst_TID;
+input  [0:0] inst_TDEST;
+output dbg_ap_start;
+output dbg_ap_done;

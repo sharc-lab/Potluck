@@ -1,0 +1,33 @@
+
+
+set RtlHierarchyInfo {[
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.BRAM_image_input_U"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.BRAM_conv_weight_U"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.BRAM_conv_bias_U"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.BRAM_buffer_1_U"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.BRAM_buffer_2_U"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_load_image_fu_100"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_load_image_fu_100.grp_load_image_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2_VITIS_LOOP_37_3_fu_49"},
+	{"ID" : "8", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_load_image_fu_100.grp_load_image_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2_VITIS_LOOP_37_3_fu_49.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_load_weight_fu_109"},
+	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_load_weight_fu_109.grp_load_weight_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_49_3_VITIS_LOOP_s_fu_49"},
+	{"ID" : "11", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_load_weight_fu_109.grp_load_weight_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_VITIS_LOOP_49_3_VITIS_LOOP_s_fu_49.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_load_bias_fu_118"},
+	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_load_bias_fu_118.grp_load_bias_Pipeline_VITIS_LOOP_61_1_fu_49"},
+	{"ID" : "14", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_load_bias_fu_118.grp_load_bias_Pipeline_VITIS_LOOP_61_1_fu_49.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_conv2d_fu_127"},
+	{"ID" : "16", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_conv2d_fu_127.grp_conv2d_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3_fu_84"},
+	{"ID" : "17", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_conv2d_fu_127.grp_conv2d_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2_VITIS_LOOP_104_3_fu_84.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "18", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_conv2d_fu_127.grp_conv2d_Pipeline_VITIS_LOOP_119_8_VITIS_LOOP_121_9_fu_92"},
+	{"ID" : "19", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_conv2d_fu_127.grp_conv2d_Pipeline_VITIS_LOOP_119_8_VITIS_LOOP_121_9_fu_92.mul_32s_32s_54_1_1_U21"},
+	{"ID" : "20", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_conv2d_fu_127.grp_conv2d_Pipeline_VITIS_LOOP_119_8_VITIS_LOOP_121_9_fu_92.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_leaky_relu_activation_fu_139"},
+	{"ID" : "22", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_leaky_relu_activation_fu_139.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "23", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_store_fu_147"},
+	{"ID" : "24", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_store_fu_147.grp_store_Pipeline_VITIS_LOOP_136_1_VITIS_LOOP_137_2_VITIS_LOOP_138_3_fu_52"},
+	{"ID" : "25", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_store_fu_147.grp_store_Pipeline_VITIS_LOOP_136_1_VITIS_LOOP_137_2_VITIS_LOOP_138_3_fu_52.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U"},
+	{"ID" : "27", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mem1_m_axi_U"},
+	{"ID" : "28", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mem2_m_axi_U"}]}
+set DependenceCheckSize 0

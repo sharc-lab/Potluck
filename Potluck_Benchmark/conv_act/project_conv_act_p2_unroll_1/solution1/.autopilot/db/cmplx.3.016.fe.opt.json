@@ -1,0 +1,89 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "5 1 2 6 4 3",
+    "file": "p2_unroll_1.cpp",
+    "fileloc": 243,
+    "instructions": 28,
+    "name": "top",
+    "total_instructions": 322
+  },
+  "1": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "p2_unroll_1.cpp",
+    "fileloc": 44,
+    "instructions": 45,
+    "name": "load_weight",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 45
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "p2_unroll_1.cpp",
+    "fileloc": 58,
+    "instructions": 18,
+    "name": "load_bias",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 18
+  },
+  "3": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "p2_unroll_1.cpp",
+    "fileloc": 133,
+    "instructions": 34,
+    "loads": {
+      "G": 1
+    },
+    "name": "store",
+    "total_instructions": 34
+  },
+  "4": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "p2_unroll_1.cpp",
+    "fileloc": 221,
+    "instructions": 40,
+    "loads": {
+      "G": 1
+    },
+    "name": "leaky_relu_activation",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 40
+  },
+  "5": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "p2_unroll_1.cpp",
+    "fileloc": 32,
+    "instructions": 36,
+    "name": "load_image",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 36
+  },
+  "6": {
+    "basicblocks": 32,
+    "calls": "",
+    "file": "p2_unroll_1.cpp",
+    "fileloc": 88,
+    "instructions": 121,
+    "loads": {
+      "G": 4
+    },
+    "name": "conv2d",
+    "stores": {
+      "G": 3
+    },
+    "total_instructions": 121
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "DRAM_image_input": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_200_mem1_32_axi_dram_1",
+        "dram_array_1"
+    ],
+    "DRAM_conv_weight": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_576_mem1_32_axi_dram_1",
+        "dram_array_2"
+    ],
+    "DRAM_conv_bias": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_8_mem1_32_axi_dram_1",
+        "dram_array_3"
+    ],
+    "DRAM_image_output": [
+        "w_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_200_mem2_32_axi_dram_1",
+        "dram_array_4"
+    ]
+}

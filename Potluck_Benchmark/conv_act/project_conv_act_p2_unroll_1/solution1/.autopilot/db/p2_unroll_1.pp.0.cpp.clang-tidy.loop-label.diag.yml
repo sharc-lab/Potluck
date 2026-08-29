@@ -1,0 +1,1619 @@
+---
+MainSourceFile:  /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1223_1:  '
+    FileOffset:      1223
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          878948
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1223_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          1106874
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          1107338
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          1107803
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          1391327
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      91
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      92
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      93
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      94
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      95
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      125
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      126
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      127
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      128
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      129
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      130
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      131
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      132
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      133
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      134
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      184
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      185
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      186
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      213
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      214
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      215
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      216
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      217
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      218
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      254
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      255
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          1982729
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_1:  '
+    FileOffset:      117
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          1983564
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_289_1:  '
+    FileOffset:      289
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          1986232
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_289_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_449_1:  '
+    FileOffset:      449
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          1988976
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_449_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_629_1:  '
+    FileOffset:      629
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          1992137
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_629_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_633_2:  '
+    FileOffset:      633
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          1992218
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_633_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_743_1:  '
+    FileOffset:      743
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          1994527
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_743_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_840_1:  '
+    FileOffset:      840
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          1996042
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_840_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_859_2:  '
+    FileOffset:      859
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          1996272
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_859_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1173_1:  '
+    FileOffset:      1173
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2002496
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1173_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1256_1:  '
+    FileOffset:      1256
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2004099
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1256_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_68_1:  '
+    FileOffset:      68
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2012009
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_68_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_74_2:  '
+    FileOffset:      74
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2012159
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_74_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_78_3:  '
+    FileOffset:      78
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2012256
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_78_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_145_4:  '
+    FileOffset:      145
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2014137
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_145_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_151_5:  '
+    FileOffset:      151
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2014287
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_151_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_155_6:  '
+    FileOffset:      155
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2014384
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_155_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_170_7:  '
+    FileOffset:      170
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2014765
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_170_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_178_8:  '
+    FileOffset:      178
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2014996
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_178_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_243_9:  '
+    FileOffset:      243
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2018443
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_243_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_249_10:  '
+    FileOffset:      249
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2018595
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_249_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_253_11:  '
+    FileOffset:      253
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2018695
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_253_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_12:  '
+    FileOffset:      268
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2019077
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_276_13:  '
+    FileOffset:      276
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2019315
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_276_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_505_14:  '
+    FileOffset:      505
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2034870
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_505_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_511_15:  '
+    FileOffset:      511
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2035022
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_511_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_515_16:  '
+    FileOffset:      515
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2035121
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_515_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_525_17:  '
+    FileOffset:      525
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2035298
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_525_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_529_18:  '
+    FileOffset:      529
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2035396
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_529_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_539_19:  '
+    FileOffset:      539
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2035681
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_539_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_547_20:  '
+    FileOffset:      547
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2035936
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_547_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_908_21:  '
+    FileOffset:      908
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2068175
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_908_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_914_22:  '
+    FileOffset:      914
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2068327
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_914_22: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_918_23:  '
+    FileOffset:      918
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2068427
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_918_23: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1034_1:  '
+    FileOffset:      1034
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2071103
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1034_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1040_2:  '
+    FileOffset:      1040
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2071253
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1040_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1044_3:  '
+    FileOffset:      1044
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2071351
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1044_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1131_4:  '
+    FileOffset:      1131
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2074821
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1131_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1137_5:  '
+    FileOffset:      1137
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2074972
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1137_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1141_6:  '
+    FileOffset:      1141
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2075071
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1141_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1160_7:  '
+    FileOffset:      1160
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2075551
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1160_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1167_8:  '
+    FileOffset:      1167
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2075793
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1167_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1283_9:  '
+    FileOffset:      1283
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2081365
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1283_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1289_10:  '
+    FileOffset:      1289
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2081517
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1289_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1293_11:  '
+    FileOffset:      1293
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2081616
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1293_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1313_12:  '
+    FileOffset:      1313
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2082125
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1313_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1320_13:  '
+    FileOffset:      1320
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2082374
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1320_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1582_14:  '
+    FileOffset:      1582
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2099731
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1582_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1588_15:  '
+    FileOffset:      1588
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2099883
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1588_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1592_16:  '
+    FileOffset:      1592
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2099983
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1592_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1616_17:  '
+    FileOffset:      1616
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2100457
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1616_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1623_18:  '
+    FileOffset:      1623
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2100724
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1623_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2053_19:  '
+    FileOffset:      2053
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2139295
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2053_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2059_20:  '
+    FileOffset:      2059
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2139447
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2059_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2063_21:  '
+    FileOffset:      2063
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2139547
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2063_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2193_1:  '
+    FileOffset:      2193
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2142167
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2193_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2200_2:  '
+    FileOffset:      2200
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2142330
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2200_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2204_3:  '
+    FileOffset:      2204
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2142422
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2204_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2251_4:  '
+    FileOffset:      2251
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2144031
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2251_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2258_5:  '
+    FileOffset:      2258
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2144193
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2258_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2262_6:  '
+    FileOffset:      2262
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2144285
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2262_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2280_7:  '
+    FileOffset:      2280
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2144658
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2280_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2335_8:  '
+    FileOffset:      2335
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2147124
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2335_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2342_9:  '
+    FileOffset:      2342
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2147291
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2342_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2346_10:  '
+    FileOffset:      2346
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2147384
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2346_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2364_11:  '
+    FileOffset:      2364
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2147765
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2364_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2453_12:  '
+    FileOffset:      2453
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2153206
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2453_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2460_13:  '
+    FileOffset:      2460
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2153374
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2460_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2464_14:  '
+    FileOffset:      2464
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2153468
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2464_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2474_15:  '
+    FileOffset:      2474
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2153639
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2474_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2478_16:  '
+    FileOffset:      2478
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2153730
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2478_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2489_17:  '
+    FileOffset:      2489
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2154012
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2489_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2497_18:  '
+    FileOffset:      2497
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2154199
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2497_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2822_19:  '
+    FileOffset:      2822
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2188669
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2822_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2829_20:  '
+    FileOffset:      2829
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2188837
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2829_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2833_21:  '
+    FileOffset:      2833
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2188931
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2833_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2921_1:  '
+    FileOffset:      2921
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2190733
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2921_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2928_2:  '
+    FileOffset:      2928
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2190841
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2928_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2932_3:  '
+    FileOffset:      2932
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2190912
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2932_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2947_4:  '
+    FileOffset:      2947
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2191200
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2947_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2979_5:  '
+    FileOffset:      2979
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2192414
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2979_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2986_6:  '
+    FileOffset:      2986
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2192525
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2986_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2990_7:  '
+    FileOffset:      2990
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2192598
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2990_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3005_8:  '
+    FileOffset:      3005
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2192893
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3005_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3055_9:  '
+    FileOffset:      3055
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2196226
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3055_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3062_10:  '
+    FileOffset:      3062
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2196337
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3062_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3066_11:  '
+    FileOffset:      3066
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2196410
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3066_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3081_12:  '
+    FileOffset:      3081
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2196706
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3081_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3218_13:  '
+    FileOffset:      3218
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2216018
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3218_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3225_14:  '
+    FileOffset:      3225
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2216132
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3225_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3229_15:  '
+    FileOffset:      3229
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2216207
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3229_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3244_16:  '
+    FileOffset:      3244
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2216494
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3244_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3404_17:  '
+    FileOffset:      3404
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2242104
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3404_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3411_18:  '
+    FileOffset:      3411
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2242218
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3411_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3415_19:  '
+    FileOffset:      3415
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2242295
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3415_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_703_1:  '
+    FileOffset:      703
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_log_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2276446
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_703_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_921_1:  '
+    FileOffset:      921
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_log_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2284835
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_921_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1345_1:  '
+    FileOffset:      1345
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_log_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2303829
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1345_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_240_1:  '
+    FileOffset:      240
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_sqrt_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2318788
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_240_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_2:  '
+    FileOffset:      268
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_sqrt_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2319309
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_48_1:  '
+    FileOffset:      48
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2335409
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_48_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_109_2:  '
+    FileOffset:      109
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2336580
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_109_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_123_3:  '
+    FileOffset:      123
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2336889
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_123_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_153_4:  '
+    FileOffset:      153
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2337399
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_153_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_281_1:  '
+    FileOffset:      281
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2339355
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_281_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_301_2:  '
+    FileOffset:      301
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2339720
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_301_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_315_3:  '
+    FileOffset:      315
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2340028
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_315_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_433_1:  '
+    FileOffset:      433
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2341877
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_433_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_447_2:  '
+    FileOffset:      447
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2342202
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_447_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_33_1:  '
+    FileOffset:      33
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_diff_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2344958
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_33_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_183_1:  '
+    FileOffset:      183
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_diff_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2347913
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_183_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_248_1:  '
+    FileOffset:      248
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_diff_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2349221
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_16_1:  '
+    FileOffset:      16
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2360470
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_16_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_1:  '
+    FileOffset:      27
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2360645
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_38_1:  '
+    FileOffset:      38
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2360806
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_38_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2360968
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_60_1:  '
+    FileOffset:      60
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2361142
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_60_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_71_1:  '
+    FileOffset:      71
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2361317
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_71_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_82_1:  '
+    FileOffset:      82
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2361478
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_82_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_93_1:  '
+    FileOffset:      93
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2361640
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_93_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_1:  '
+    FileOffset:      26
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_mad_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2434051
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_1:  '
+    FileOffset:      40
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cbrt_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2435857
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hypot_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2440530
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_81_2:  '
+    FileOffset:      81
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hypot_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2441282
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_81_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_3:  '
+    FileOffset:      169
+    FilePath:        /tools/software/amd/xilinx/ARCHIVE/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hypot_apfixed.h
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2442988
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_35_1:  '
+    FileOffset:      35
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2497379
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_35_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_36_2:  '
+    FileOffset:      36
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2497426
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_36_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_37_3:  '
+    FileOffset:      37
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2497477
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_37_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_47_1:  '
+    FileOffset:      47
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2497713
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_47_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_48_2:  '
+    FileOffset:      48
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2497760
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_48_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_3:  '
+    FileOffset:      49
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2497811
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_50_4:  '
+    FileOffset:      50
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2497866
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_50_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2498116
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_102_1:  '
+    FileOffset:      102
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2498721
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_102_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_103_2:  '
+    FileOffset:      103
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2498759
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_103_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_3:  '
+    FileOffset:      104
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2498801
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_112_4:  '
+    FileOffset:      112
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2498928
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_112_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_113_5:  '
+    FileOffset:      113
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2498966
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_113_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_114_6:  '
+    FileOffset:      114
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2499008
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_114_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_115_7:  '
+    FileOffset:      115
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2499057
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_115_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_119_8:  '
+    FileOffset:      119
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2499294
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_119_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_121_9:  '
+    FileOffset:      121
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2499356
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_121_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_136_1:  '
+    FileOffset:      136
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2499703
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_136_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_137_2:  '
+    FileOffset:      137
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2499750
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_137_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_138_3:  '
+    FileOffset:      138
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2499801
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_138_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_151_1:  '
+    FileOffset:      151
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2500173
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_151_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_153_2:  '
+    FileOffset:      153
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2500224
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_153_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_155_3:  '
+    FileOffset:      155
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2500283
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_155_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_1:  '
+    FileOffset:      169
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2500692
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_171_2:  '
+    FileOffset:      171
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2500743
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_171_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_173_3:  '
+    FileOffset:      173
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2500802
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_173_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_188_1:  '
+    FileOffset:      188
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2501264
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_188_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_190_2:  '
+    FileOffset:      190
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2501315
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_190_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_192_3:  '
+    FileOffset:      192
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2501374
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_192_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_208_1:  '
+    FileOffset:      208
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2501888
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_208_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_209_2:  '
+    FileOffset:      209
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2501935
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_209_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_210_3:  '
+    FileOffset:      210
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2501986
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_210_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_231_1:  '
+    FileOffset:      231
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2502562
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_231_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_232_2:  '
+    FileOffset:      232
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2502600
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_232_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_233_3:  '
+    FileOffset:      233
+    FilePath:        p2_unroll_1.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/conv_act/project_conv_act_p2_unroll_1/solution1/.autopilot/db/p2_unroll_1.pp.0.cpp
+        Offset:          2502642
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_233_3: '
+...

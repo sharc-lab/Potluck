@@ -1,0 +1,3 @@
+{%- set axi_name = extract_axi_name(module_name) %}
+assign {{ axi_name }}_ARADDR = {{ ARADDR }};
+assign {{ axi_name }}_ARLEN = {{ ARLEN }};

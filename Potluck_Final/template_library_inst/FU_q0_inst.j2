@@ -1,0 +1,31 @@
+reg [{{ bit_width - 1 }}:0] sel_{{ input_buffer_name }}_q0;
+
+always @ (*) begin
+    case (sel_{{ input_buffer_name }}_q0)
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ input_buffer_name }}_q0 = {{ mapping.func_name }}_q0;
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ input_buffer_name }}_q0 = 'bx;
+        end
+        default: begin
+            {{ input_buffer_name }}_q0 = 'bx;
+        end
+    endcase
+end
+
+always @ (*) begin
+    if (1'b1 == load_inst_fifo_U_ap_start_reg) begin
+        sel_{{ input_buffer_name }}_q0 = 1'b0;
+    end else begin
+        // Assign the default code: 2^bit_width - 1
+        sel_{{ input_buffer_name }}_q0 = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end
+
+
+
+

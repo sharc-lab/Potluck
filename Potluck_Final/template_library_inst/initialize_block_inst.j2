@@ -1,0 +1,8 @@
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm[{{init_state}}])) begin
+        {% for reg in reg_names %}
+        {{reg.name}}_read_reg <= {{reg.name}};
+        {% endfor %}
+    end
+end

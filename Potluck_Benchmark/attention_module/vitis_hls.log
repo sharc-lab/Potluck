@@ -1,0 +1,66 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1.2 (64-bit)
+  **** SW Build 5096458 on Sep  5 2024
+  **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+  **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+  **** Start of session at: Fri Jul 24 19:33:42 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/software/xilinx/ARCHIVE/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'hchen799' on host 'chao-srv1.ece.gatech.edu' (Linux_x86_64 version 4.18.0-553.129.1.el8_10.x86_64) on Fri Jul 24 19:33:44 EDT 2026
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.10 (Ootpa)"
+INFO: [HLS 200-10] In directory '/export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/attention_module'
+WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'run_hls_p1_unroll_1.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset project_top_attention_module_p1_unroll_1 
+INFO: [HLS 200-10] Creating and opening project '/export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/attention_module/project_top_attention_module_p1_unroll_1'.
+INFO: [HLS 200-1510] Running: set_top top 
+INFO: [HLS 200-1510] Running: add_files p1_unroll_1.cpp 
+INFO: [HLS 200-10] Adding design file 'p1_unroll_1.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb_p1.cpp 
+INFO: [HLS 200-10] Adding test bench file 'tb_p1.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/A0.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/A0.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/A1.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/A1.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/B0.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/B0.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/B1.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/B1.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/AW00.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/AW00.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/AW10.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/AW10.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/AW01.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/AW01.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/AW11.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/AW11.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/BW00.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/BW00.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/BW10.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/BW10.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/BW01.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/BW01.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/BW11.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/BW11.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/A.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/A.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/B.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/B.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/AW.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/AW.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./data_unroll_1/BW.txt 
+INFO: [HLS 200-10] Adding test bench file './data_unroll_1/BW.txt' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Creating and opening solution '/export/hdd/scratch/hchen799/Potluck_MICRO_Artifact/Potluck_Benchmark/attention_module/project_top_attention_module_p1_unroll_1/solution1'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries

@@ -1,0 +1,117 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 2 6 7 3 4",
+    "file": "p1_unroll_16.cpp",
+    "fileloc": 270,
+    "instructions": 932,
+    "name": "top",
+    "total_instructions": 91321
+  },
+  "1": {
+    "basicblocks": 24,
+    "calls": "",
+    "file": "p1_unroll_16.cpp",
+    "fileloc": 32,
+    "instructions": 120,
+    "loads": {
+      "L": 1
+    },
+    "name": "load_image",
+    "stores": {
+      "G": 16
+    },
+    "total_instructions": 120
+  },
+  "2": {
+    "basicblocks": 298,
+    "calls": "",
+    "file": "p1_unroll_16.cpp",
+    "fileloc": 44,
+    "instructions": 1888,
+    "loads": {
+      "L": 1
+    },
+    "name": "load_weight",
+    "stores": {
+      "G": 256
+    },
+    "total_instructions": 1888
+  },
+  "3": {
+    "basicblocks": 119,
+    "calls": "5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5",
+    "file": "p1_unroll_16.cpp",
+    "fileloc": 244,
+    "instructions": 1466,
+    "loads": {
+      "G": 16,
+      "L": 16
+    },
+    "name": "elu_activation",
+    "stores": {
+      "G": 32
+    },
+    "total_instructions": 4842
+  },
+  "4": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "p1_unroll_16.cpp",
+    "fileloc": 133,
+    "instructions": 54,
+    "loads": {
+      "G": 16
+    },
+    "name": "store",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 54
+  },
+  "5": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "hls_exp_apfixed.h",
+    "fileloc": 13,
+    "instructions": 211,
+    "loads": {
+      "G": 6
+    },
+    "name": "exp<32, 10>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 211
+  },
+  "6": {
+    "basicblocks": 20,
+    "calls": "",
+    "file": "p1_unroll_16.cpp",
+    "fileloc": 58,
+    "instructions": 78,
+    "loads": {
+      "L": 1
+    },
+    "name": "load_bias",
+    "stores": {
+      "G": 16
+    },
+    "total_instructions": 78
+  },
+  "7": {
+    "basicblocks": 1618,
+    "calls": "",
+    "file": "p1_unroll_16.cpp",
+    "fileloc": 88,
+    "instructions": 83407,
+    "loads": {
+      "G": 544
+    },
+    "name": "conv2d",
+    "stores": {
+      "G": 528
+    },
+    "total_instructions": 83407
+  }
+}

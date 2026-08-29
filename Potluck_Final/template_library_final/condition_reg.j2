@@ -1,0 +1,21 @@
+
+{% for item in conditions %}
+reg {{ item.related_module }}_ap_done_q;
+always @(posedge ap_clk) begin
+    if (ap_rst_n_inv == 1'b1) begin
+        {{ item.related_module }}_ap_done_q <= 1'b0;      // previous-cycle ap_done
+        {{ item.unique_condition_reg }} <= 32'd0;
+        {{ item.unique_condition_reg }}_ap_vld <= 1'b0;
+    end else begin
+        {{ item.related_module }}_ap_done_q <= {{ item.related_module }}_ap_done;
+        if ({{ item.load_inst_module }}_ap_ready == 1'b1) begin
+            {{ item.unique_condition_reg }} <= 32'd0;
+            {{ item.unique_condition_reg }}_ap_vld <= 1'b0;
+        end
+        else if ({{ item.related_module }}_ap_done & ~{{ item.related_module }}_ap_done_q) begin
+            {{ item.unique_condition_reg }} <= {{ item.related_module }}_{{ item.func_call_port_name }};
+            {{ item.unique_condition_reg }}_ap_vld <= {{ item.related_module }}_{{ item.func_call_port_name }}_ap_vld;
+        end
+    end
+end
+{% endfor %}

@@ -1,0 +1,42 @@
+{
+    "DRAM_image_input_1": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_200_mem1_32_axi_dram_1",
+        "dram_array_1"
+    ],
+    "DRAM_image_input_2": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_200_mem1_32_axi_dram_2",
+        "dram_array_2"
+    ],
+    "DRAM_image_input_3": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_200_mem1_32_axi_dram_3",
+        "dram_array_3"
+    ],
+    "DRAM_conv_weight_3x3": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_576_mem1_32_axi_dram_1",
+        "dram_array_4"
+    ],
+    "DRAM_conv_weight_3x3_second": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_576_mem1_32_axi_dram_2",
+        "dram_array_11"
+    ],
+    "DRAM_conv_bias_3x3": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_8_mem1_32_axi_dram_1",
+        "dram_array_7"
+    ],
+    "DRAM_conv_bias_3x3_second": [
+        "r_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_8_mem1_32_axi_dram_2",
+        "dram_array_6"
+    ],
+    "DRAM_image_output_1": [
+        "w_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_200_mem2_32_axi_dram_1",
+        "dram_array_8"
+    ],
+    "DRAM_image_output_2": [
+        "w_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_200_mem2_32_axi_dram_2",
+        "dram_array_9"
+    ],
+    "DRAM_image_output_3": [
+        "w_ap_fixed_32_10_AP_TRN_AP_WRAP_0_32_200_mem2_32_axi_dram_3",
+        "dram_array_10"
+    ]
+}

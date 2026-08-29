@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "mem1":  ["load_data", "load_data_QK"],
+    "mem2": ["store_data", "store_data_two_first", "store_data_two_second", "store_data_A"],
+    "INPUT2":   ["load_inst"]      
+  }
+}
+
+
+

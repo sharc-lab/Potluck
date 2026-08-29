@@ -1,0 +1,39 @@
+
+wire  [{{fifo_depth_binary - 1}}:0] if_num_data_valid_inst_fifo;
+wire  [{{fifo_depth_binary - 1}}:0] if_fifo_cap_inst_fifo;
+wire  if_empty_n_inst_fifo;
+reg   if_read_inst_fifo;
+wire  [{{inst_length - 1}}:0] if_dout_inst_fifo;
+wire  if_full_n_inst_fifo;
+wire  if_write_inst_fifo;  
+wire  [{{inst_length - 1}}:0] if_din_inst_fifo;
+
+inst_fifo_w32_d5_S #(
+    .MEM_STYLE("shiftReg"),
+    .DATA_WIDTH({{inst_length}}),
+    .ADDR_WIDTH({{fifo_depth_binary}}),
+    .DEPTH({{fifo_depth}})
+) instruction_fifo_inst (
+    .clk         (ap_clk),
+    .reset       (ap_rst_n_inv),
+    
+    // Write side 
+    .if_full_n   (if_full_n_inst_fifo),
+    .if_write_ce (1'b1),
+    .if_write    (if_write_inst_fifo),
+    .if_din      (if_din_inst_fifo),
+
+    // Read side
+    .if_num_data_valid (if_num_data_valid_inst_fifo),
+    .if_fifo_cap (if_fifo_cap_inst_fifo),
+    .if_empty_n  (if_empty_n_inst_fifo),
+    .if_read_ce  (1'b1),
+    .if_read     (if_read_inst_fifo),
+    .if_dout     (if_dout_inst_fifo)
+);
+
+assign if_din_inst_fifo = {{load_inst_instance_name}}_fifo_1_din;
+assign if_write_inst_fifo = {{load_inst_instance_name}}_fifo_1_write;
+always @(*) begin
+    {{load_inst_instance_name}}_fifo_1_full_n = if_full_n_inst_fifo;
+end

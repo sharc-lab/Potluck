@@ -1,0 +1,22 @@
+
+{
+  "P1":   ["BRAM_input_1", "BRAM_weight_1", "BRAM_output_1",
+           "BRAM_input_2", "BRAM_weight_2", "BRAM_output_2",
+           "BRAM_input_3", "BRAM_weight_3", "BRAM_output_3",
+           "BRAM_input_4", "BRAM_weight_4", "BRAM_output_4",
+           "BRAM_output_final_1"],
+          
+  "P2":   ["BRAM_input_1", "BRAM_weight_1", "BRAM_output_1",
+           "BRAM_input_2", "BRAM_weight_2", "BRAM_output_2",
+           "BRAM_input_3", "BRAM_weight_3", "BRAM_output_3",
+           "BRAM_input_4", "BRAM_weight_4", "BRAM_output_4",
+           "BRAM_output_final_A", "BRAM_output_final_B"],
+
+  "P3":   ["BRAM_input_1", "BRAM_weight_1", "BRAM_output_1",
+           "BRAM_input_2", "BRAM_weight_2", "BRAM_output_2",
+           "BRAM_input_3", "BRAM_output_3",
+           "BRAM_input_4", "BRAM_output_4",
+           "BRAM_output_final_A", "BRAM_output_final_B",
+           "BRAM_output_final", "BRAM_output_final_act"]
+}
+

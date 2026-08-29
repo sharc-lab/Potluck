@@ -1,0 +1,64 @@
+{
+  "DRAM_array_name_list": [
+    "dram_array_1",
+    "dram_array_2",
+    "dram_array_3",
+    "dram_array_4",
+    "dram_array_5",
+    "dram_array_6",
+    "dram_array_7",
+    "dram_array_8",
+    "dram_array_9",
+    "dram_array_10",
+    "inst_array_0_0"
+  ],
+  "DRAM_array_direction": [
+    "input",
+    "input",
+    "input",
+    "input",
+    "input",
+    "input",
+    "input",
+    "input",
+    "input",
+    "output",
+    "input"
+  ],
+  "DRAM_array_size": [
+    512,
+    4096,
+    4096,
+    4096,
+    4096,
+    4096,
+    4096,
+    4096,
+    4096,
+    512,
+    5
+  ],
+  "DRAM_array_address_list": [
+    "0x10",
+    "0x1c",
+    "0x28",
+    "0x34",
+    "0x40",
+    "0x4c",
+    "0x58",
+    "0x64",
+    "0x70",
+    "0x7c",
+    "0x88"
+  ],
+  "normal_reg_name_list": [
+    "n_inst_0_0"
+  ],
+  "normal_reg_address_list": [
+    "0x94"
+  ],
+  "control_status_reg_list": [],
+  "control_status_reg_dram_address_list": [],
+  "control_status_reg_dram_ap_vld_list": [],
+  "inst_bits": 128
+}

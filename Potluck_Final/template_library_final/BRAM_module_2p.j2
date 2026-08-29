@@ -1,0 +1,43 @@
+{% for mod in BRAM_modules %}
+{% set prefix = mod.instance_name.split('_U')[0] %}
+reg   [{{ mod.AddressWidth - 1 }}:0] {{ prefix }}_U_address0;
+reg   {{ prefix }}_U_ce0;
+reg   {{ prefix }}_U_we0;
+reg   [{{ mod.DataWidth - 1 }}:0] {{ prefix }}_U_d0;
+wire  [{{ mod.DataWidth - 1 }}:0] {{ prefix }}_U_q0;
+
+reg   [{{ mod.AddressWidth - 1 }}:0] {{ prefix }}_U_address1;
+reg   {{ prefix }}_U_ce1;
+reg   {{ prefix }}_U_we1;
+reg   [{{ mod.DataWidth - 1 }}:0] {{ prefix }}_U_d1;
+wire  [{{ mod.DataWidth - 1 }}:0] {{ prefix }}_U_q1;
+{% endfor %}
+
+{% for mod in BRAM_modules %}
+{% set prefix = mod.instance_name.split('_U')[0] %}
+{{ mod.module_name }} #(
+    .DataWidth( {{ mod.DataWidth }} ),
+    .AddressRange( {{ mod.AddressRange }} ),
+    .AddressWidth( {{ mod.AddressWidth }} ))
+{{ mod.instance_name }}(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0({{ prefix }}_U_address0),
+    .ce0({{ prefix }}_U_ce0),
+    .we0({{ prefix }}_U_we0),
+    .d0({{ prefix }}_U_d0),
+    .q0({{ prefix }}_U_q0),
+    .address1({{ prefix }}_U_address1),
+    .ce1({{ prefix }}_U_ce1),
+    .we1({{ prefix }}_U_we1),
+    .d1({{ prefix }}_U_d1),
+    .q1({{ prefix }}_U_q1)
+);
+{% endfor %}
+
+
+
+
+
+
+

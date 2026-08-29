@@ -1,0 +1,188 @@
+reg [{{ bit_width - 1 }}:0] sel_{{ output_AXI_name }}_AWVALID;
+always @ (*) begin
+    case (sel_{{ output_AXI_name }}_AWVALID)
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ output_AXI_name }}_AWVALID = {{ mapping.func_name }}_AWVALID;
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ output_AXI_name }}_AWVALID = 1'b0;
+        end
+        default: begin
+            {{ output_AXI_name }}_AWVALID = 1'b0;
+        end
+    endcase
+end
+
+always @ (*) begin
+    if (ap_CS_fsm[0] != 1'b1) begin
+        sel_{{ output_AXI_name }}_AWVALID = next_fsm_state_reg[{{ fsm_state_range }}];
+    end else begin
+        // Assign the default code: 2^bit_width - 1
+        sel_{{ output_AXI_name }}_AWVALID = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end
+
+reg [{{ bit_width - 1 }}:0] sel_{{ output_AXI_name }}_BREADY;
+always @ (*) begin
+    case (sel_{{ output_AXI_name }}_BREADY)
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ output_AXI_name }}_BREADY = {{ mapping.func_name }}_BREADY;
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ output_AXI_name }}_BREADY = 1'b0;
+        end
+        default: begin
+            {{ output_AXI_name }}_BREADY = 1'b0;
+        end
+    endcase
+end
+
+always @ (*) begin
+    if (ap_CS_fsm[0] != 1'b1) begin
+        sel_{{ output_AXI_name }}_BREADY = next_fsm_state_reg[{{ fsm_state_range }}];
+    end else begin
+        // Assign the default code: 2^bit_width - 1
+        sel_{{ output_AXI_name }}_BREADY = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end
+
+reg [{{ bit_width - 1 }}:0] sel_{{ output_AXI_name }}_WVALID;
+always @ (*) begin
+    case (sel_{{ output_AXI_name }}_WVALID)
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ output_AXI_name }}_WVALID = {{ mapping.func_name }}_WVALID;
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ output_AXI_name }}_WVALID = 1'b0;
+        end
+        default: begin
+            {{ output_AXI_name }}_WVALID = 1'b0;
+        end
+    endcase
+end
+
+always @ (*) begin
+    if (ap_CS_fsm[0] != 1'b1) begin
+        sel_{{ output_AXI_name }}_WVALID = next_fsm_state_reg[{{ fsm_state_range }}];
+    end else begin
+        // Assign the default code: 2^bit_width - 1
+        sel_{{ output_AXI_name }}_WVALID = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end
+
+reg [{{ bit_width - 1 }}:0] sel_{{ output_AXI_name }}_AWADDR;
+always @ (*) begin
+    case (sel_{{ output_AXI_name }}_AWADDR)
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ output_AXI_name }}_AWADDR = {{ mapping.func_name }}_AWADDR;
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ output_AXI_name }}_AWADDR = 'bx;
+        end
+        default: begin
+            {{ output_AXI_name }}_AWADDR = 'bx;
+        end
+    endcase
+end
+
+always @ (*) begin
+    if (ap_CS_fsm[0] != 1'b1) begin
+        sel_{{ output_AXI_name }}_AWADDR = next_fsm_state_reg[{{ fsm_state_range }}];
+    end else begin
+        // Assign the default code: 2^bit_width - 1
+        sel_{{ output_AXI_name }}_AWADDR = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end
+
+reg [{{ bit_width - 1 }}:0] sel_{{ output_AXI_name }}_AWLEN;
+always @ (*) begin
+    case (sel_{{ output_AXI_name }}_AWLEN)
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ output_AXI_name }}_AWLEN = {{ mapping.func_name }}_AWLEN;
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ output_AXI_name }}_AWLEN = 'bx;
+        end
+        default: begin
+            {{ output_AXI_name }}_AWLEN = 'bx;
+        end
+    endcase
+end
+
+always @ (*) begin
+    if (ap_CS_fsm[0] != 1'b1) begin
+        sel_{{ output_AXI_name }}_AWLEN = next_fsm_state_reg[{{ fsm_state_range }}];
+    end else begin
+        // Assign the default code: 2^bit_width - 1
+        sel_{{ output_AXI_name }}_AWLEN = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end
+
+reg [{{ bit_width - 1 }}:0] sel_{{ output_AXI_name }}_WDATA;
+always @ (*) begin
+    case (sel_{{ output_AXI_name }}_WDATA)
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ output_AXI_name }}_WDATA = {{ mapping.func_name }}_WDATA;
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ output_AXI_name }}_WDATA = 'bx;
+        end
+        default: begin
+            {{ output_AXI_name }}_WDATA = 'bx;
+        end
+    endcase
+end
+
+always @ (*) begin
+    if (ap_CS_fsm[0] != 1'b1) begin
+        sel_{{ output_AXI_name }}_WDATA = next_fsm_state_reg[{{ fsm_state_range }}];
+    end else begin
+        // Assign the default code: 2^bit_width - 1
+        sel_{{ output_AXI_name }}_WDATA = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end
+
+reg [{{ bit_width - 1 }}:0] sel_{{ output_AXI_name }}_WSTRB;
+always @ (*) begin
+    case (sel_{{ output_AXI_name }}_WSTRB)
+        {%- for mapping in case_mappings %}
+        {{ bit_width }}'d{{ loop.index0 }}: begin
+            {{ output_AXI_name }}_WSTRB = {{ mapping.func_name }}_WSTRB;
+        end
+        {%- endfor %}
+        // Reserved default case
+        {{ bit_width }}'d{{ (2**bit_width) - 1 }}: begin
+            {{ output_AXI_name }}_WSTRB = 'bx;
+        end
+        default: begin
+            {{ output_AXI_name }}_WSTRB = 'bx;
+        end
+    endcase
+end
+
+always @ (*) begin
+    if (ap_CS_fsm[0] != 1'b1) begin
+        sel_{{ output_AXI_name }}_WSTRB = next_fsm_state_reg[{{ fsm_state_range }}];
+    end else begin
+        // Assign the default code: 2^bit_width - 1
+        sel_{{ output_AXI_name }}_WSTRB = {{ bit_width }}'d{{ (2**bit_width) - 1 }};
+    end
+end

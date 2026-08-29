@@ -1,0 +1,108 @@
+reg read_one_inst_success_reg;
+reg inst_fifo_empty_indicator_reg;
+always @(posedge ap_clk) begin
+    if (ap_rst_n_inv == 1'b1) begin
+        next_fsm_state_reg  <= {{inst_length}}'b{{ init_state_binary }};
+        if_read_inst_fifo  <= 1'b0;
+        ap_done_states_fsm <= {{func_call_inst_length}}'d0;
+        initial_state_reg <= 1'b0;
+        inst_fifo_empty_indicator_reg <= 1'b0;
+    end else begin
+
+        if (ap_CS_fsm[{{start_state}}] == 1'b1) begin
+            if (ap_rst_n_inv == 1'b0 && ap_start == 1'b1) begin
+                next_fsm_state_reg <= {{inst_length}}'b{{ prepare_start_state_binary }};
+            end
+        end
+
+        else if (ap_CS_fsm[{{end_state}}] == 1'b1) begin 
+            if_read_inst_fifo <= 1'b0;
+        end
+
+        else if (ap_CS_fsm[{{prepare_start_state}}] == 1'b1 && initial_state_reg == 1'b0) begin
+            if (ap_rst_n_inv == 1'b0 && if_empty_n_inst_fifo == 1'b1) begin
+                if_read_inst_fifo <= 1'b1;
+                next_fsm_state_reg <= if_dout_inst_fifo;
+                initial_state_reg <= 1'b1;
+            end else begin
+                if_read_inst_fifo <= 1'b0;
+            end
+        end 
+        
+        else if (ap_CS_fsm[{{prepare_start_state}}] != 1'b1 && ap_done_states_fsm == ap_CS_fsm_load_inst_state) begin
+
+            {% for entry in ready_signals %}
+            if (1'b1 == ap_CS_fsm_load_inst_state[{{ entry.index }}]) begin
+                ap_done_states_fsm[{{ entry.index }}] <= 1'b0;
+            end else if ({{ entry.name }}_ap_done_trigger == 1'b1) begin
+                ap_done_states_fsm[{{ entry.index }}] <= 1'b1;
+            end
+            {% endfor %}
+
+            if (ap_rst_n_inv == 1'b0 && if_empty_n_inst_fifo == 1'b1) begin
+                if_read_inst_fifo <= 1'b1;
+                next_fsm_state_reg <= if_dout_inst_fifo;
+            end else begin
+                if_read_inst_fifo <= 1'b0;
+                next_fsm_state_reg <= next_fsm_state_reg;
+                inst_fifo_empty_indicator_reg <= 1'b1;
+            end
+        end
+
+        else begin
+            {% for entry in ready_signals %}
+            if ({{ entry.name }}_ap_done_trigger == 1'b1) begin
+                ap_done_states_fsm[{{ entry.index }}] <= 1'b1;
+            end
+            {% endfor %}
+            if (inst_fifo_empty_indicator_reg == 1'b1) begin
+                if (ap_rst_n_inv == 1'b0 && if_empty_n_inst_fifo == 1'b1) begin
+                    if_read_inst_fifo <= 1'b1;
+                    next_fsm_state_reg <= if_dout_inst_fifo;
+                    inst_fifo_empty_indicator_reg <= 1'b0;
+                end else begin
+                    if_read_inst_fifo <= 1'b0;
+                    next_fsm_state_reg <= next_fsm_state_reg;
+                end
+            end else begin
+                if_read_inst_fifo <= 1'b0;
+                next_fsm_state_reg <= next_fsm_state_reg;
+            end
+        end
+    end
+end
+
+
+always @ (*) begin
+    ap_NS_fsm = next_fsm_state_reg[{{inst_range}}];
+end
+
+always @ (*) begin
+    ap_NS_fsm_load_inst_state = next_fsm_state_reg[{{load_inst_range}}];
+end
+
+always @ (posedge ap_clk) begin
+    if (ap_rst_n_inv == 1'b1) begin
+        read_one_inst_success_reg <= 1'b0;
+    end else begin 
+        if (ap_CS_fsm[{{start_state}}] == 1'b1) begin
+            read_one_inst_success_reg <= 1'b0;
+        end 
+        else if (ap_CS_fsm[{{end_state}}] == 1'b1) begin
+            read_one_inst_success_reg <= 1'b0;
+        end  
+        else if (ap_CS_fsm[{{prepare_start_state}}] == 1'b1 && initial_state_reg == 1'b0) begin
+            read_one_inst_success_reg <= 1'b0;
+        end 
+        else if (ap_CS_fsm[{{prepare_start_state}}] != 1'b1 && ap_done_states_fsm == ap_CS_fsm) begin
+            if (ap_rst_n_inv == 1'b0 && if_empty_n_inst_fifo == 1'b1) begin
+                read_one_inst_success_reg <= 1'b1;
+            end
+        end else begin
+            if (read_one_inst_success_reg == 1'b1) begin
+                read_one_inst_success_reg <= 1'b0;
+            end
+        end
+    end
+end
+

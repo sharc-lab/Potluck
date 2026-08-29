@@ -1,0 +1,15 @@
+{% for mod in modules %}
+always @ (posedge ap_clk) begin
+    if (ap_rst_n_inv == 1'b1) begin
+        {{ mod.name }}_start_status_reg <= 1'b0;
+    end else if ((1'b1 == ap_CS_fsm[{{ mod.fsm_index }}]) & ({{ mod.name }}_start_status_reg == 1'b0)) begin
+        {{ mod.name }}_start_status_reg <= 1'b1;
+    end else if (1'b1 == read_one_inst_success_reg) begin
+        if (1'b1 == next_fsm_state_reg[{{ mod.fsm_index }}]) begin
+            {{ mod.name }}_start_status_reg <= 1'b0;
+        end
+    end
+end
+{% endfor %}
+
+

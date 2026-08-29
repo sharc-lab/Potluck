@@ -1,0 +1,8 @@
+{
+  "mappings": {
+    "mem1":  ["load_all_first", "load_all_second", "load_all_third"],
+    "mem2": ["store"],
+    "INPUT2":   ["load_inst"] 
+  }
+}
+

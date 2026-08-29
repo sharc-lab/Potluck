@@ -1,0 +1,49 @@
+(* fsm_encoding = "none" *) reg   [{{func_call_num - 1}}:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [{{func_call_num - 1}}:0] ap_CS_fsm_load_inst_state;
+reg   [{{func_call_num - 1}}:0] ap_NS_fsm;
+reg [{{inst_length - 1}}:0] next_fsm_state_reg;
+reg [{{func_call_num - 1}}:0] ap_done_states_fsm;
+reg [{{func_call_num - 1}}:0] ap_NS_fsm_load_inst_state;
+
+reg initial_state_reg;
+
+always @ (posedge ap_clk) begin
+    if (ap_rst_n_inv == 1'b1) begin
+        ap_CS_fsm <= {{func_call_num}}'b{{func_call_init_state}};
+        ap_CS_fsm_load_inst_state <= {{func_call_num}}'d0;
+    end else begin
+        ap_CS_fsm <= ap_NS_fsm;
+        ap_CS_fsm_load_inst_state <= ap_NS_fsm_load_inst_state;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (1'b1 == ap_CS_fsm[{{end_state}}]) begin
+        ap_done <= 1'b1;
+        ap_ready <= 1'b1;
+    end else begin
+        ap_done <= 1'b0;
+        ap_ready <= 1'b0;
+    end
+    
+end
+
+always @ (*) begin
+    if (((ap_start == 1'b0) & (1'b1 == ap_CS_fsm[{{init_state}}]))) begin
+        ap_idle = 1'b1;
+    end else begin
+        ap_idle = 1'b0;
+    end
+end
+
+always @ (*) begin
+    ap_rst_n_inv = ~ap_rst_n;
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm[{{init_state}}])) begin
+        {% for reg in reg_names %}
+        {{reg.name}}_read_reg <= {{reg.name}};
+        {% endfor %}
+    end
+end

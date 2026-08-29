@@ -1,0 +1,7 @@
+{
+  "mappings": {
+    "mem1":  ["load_input_vector", "load_attention_weights", "load_gating_weights", "load_inv_norm_W_g", "load_ffn_weights_one", "load_ffn_weights_two"],
+    "mem2": ["store_output_vector"],
+    "INPUT2":   ["load_inst"]
+  }
+}

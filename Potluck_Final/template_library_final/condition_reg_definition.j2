@@ -1,0 +1,4 @@
+{%- for name in regs %}
+reg [31:0] {{ name }};
+reg {{ name }}_ap_vld;
+{% endfor %}

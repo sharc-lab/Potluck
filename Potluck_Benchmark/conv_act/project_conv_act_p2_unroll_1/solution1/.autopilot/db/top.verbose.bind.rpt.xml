@@ -1,0 +1,51 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'top'" level="0">
+<item name = "Date">Fri Aug 28 19:49:15 2026
+</item>
+<item name = "Version">2024.1.2 (Build 5096458 on Sep  5 2024)</item>
+<item name = "Project">project_conv_act_p2_unroll_1</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu9eg-ffvb1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">2108, 16958, 21.080 us, 0.170 ms, 2109, 16959, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_load_image_fu_100">load_image, 212, 212, 2.120 us, 2.120 us, 212, 212, no</column>
+<column name="grp_load_weight_fu_109">load_weight, 588, 588, 5.880 us, 5.880 us, 588, 588, no</column>
+<column name="grp_load_bias_fu_118">load_bias, 20, 20, 0.200 us, 0.200 us, 20, 20, no</column>
+<column name="grp_conv2d_fu_127">conv2d, 864, 15714, 8.640 us, 0.157 ms, 864, 15714, no</column>
+<column name="grp_leaky_relu_activation_fu_139">leaky_relu_activation, 202, 202, 2.020 us, 2.020 us, 201, 201, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_store_fu_147">store, 210, 210, 2.100 us, 2.100 us, 210, 210, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

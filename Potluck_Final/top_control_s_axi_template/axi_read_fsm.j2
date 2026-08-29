@@ -1,0 +1,79 @@
+//------------------------AXI read fsm-------------------
+assign ARREADY = (rstate == RDIDLE);
+assign RDATA   = rdata;
+assign RRESP   = 2'b00;  // OKAY
+assign RVALID  = (rstate == RDDATA);
+assign ar_hs   = ARVALID & ARREADY;
+assign raddr   = ARADDR[ADDR_BITS-1:0];
+
+// rstate
+always @(posedge ACLK) begin
+    if (ARESET)
+        rstate <= RDRESET;
+    else if (ACLK_EN)
+        rstate <= rnext;
+end
+
+// rnext
+always @(*) begin
+    case (rstate)
+        RDIDLE:
+            if (ARVALID)
+                rnext = RDDATA;
+            else
+                rnext = RDIDLE;
+        RDDATA:
+            if (RREADY & RVALID)
+                rnext = RDIDLE;
+            else
+                rnext = RDDATA;
+        default:
+            rnext = RDIDLE;
+    endcase
+end
+
+// rdata
+always @(posedge ACLK) begin
+    if (ACLK_EN) begin
+        if (ar_hs) begin
+            rdata <= 'b0;
+            case (raddr)
+                ADDR_AP_CTRL: begin
+                    rdata[0] <= int_ap_start;
+                    rdata[1] <= int_task_ap_done;
+                    rdata[2] <= int_ap_idle;
+                    rdata[3] <= int_ap_ready;
+                    rdata[7] <= int_auto_restart;
+                    rdata[9] <= int_interrupt;
+                end
+                ADDR_GIE: begin
+                    rdata <= int_gie;
+                end
+                ADDR_IER: begin
+                    rdata <= int_ier;
+                end
+                ADDR_ISR: begin
+                    rdata <= int_isr;
+                end
+{% for r in user_defined_ports_output %}
+                ADDR_{{ r.name|upper }}_DATA_0: begin
+                    rdata <= int_{{ r.name }}[31:0];
+                end
+{% if r.type=='array' %}
+                ADDR_{{ r.name|upper }}_DATA_1: begin
+                    rdata <= int_{{ r.name }}[{{ r.width-1 }}:32];
+                end
+{% endif %}
+{% endfor %}
+{% for r in user_defined_ports_input %}
+                ADDR_{{ r.name|upper }}_DATA_0: begin
+                    rdata <= int_{{ r.name }}[31:0];
+                end
+                ADDR_{{ r.name|upper }}_CTRL: begin
+                    rdata[0] <= int_{{ r.name }}_ap_vld;
+                end
+{% endfor %}
+            endcase
+        end
+    end
+end
